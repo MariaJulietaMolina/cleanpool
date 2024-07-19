@@ -262,4 +262,10 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
   width: 50%;
 }
 
+.respuesta {
+  display: none;
+}
+.pregunta-activa .respuesta {
+  display: block;
+}
   
