@@ -138,18 +138,19 @@ button:hover {
     background-size: cover;
     position: relative;
     background-attachment: fixed;
-    z-index: 1;
-    display: flex; 
+    display:block; 
     justify-content: center; 
     align-items: center; 
 }
 
-.div1-contenedor-a h1 {
+.textoG {
     color: #f2f3f2;
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    margin-bottom: 20%;
+    margin-bottom: 3%;
+    margin-top: -5.5%;
+    
 }
 
 .logoF {
@@ -256,12 +257,31 @@ button:hover {
 
 .botones-imgGigante {
     display: flex;
-    justify-content: space-between;
-    background-color: #f2f3f2;
+    justify-content:space-evenly;
+   
+    
 }
 
 .botones-imgGigante div img {
     width: 20%;
+}
+
+.whassap-contacto{
+    background-color: #f2f3f2;
+    width:20%;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1)
+}
+
+.mail-contacto{
+    background-color: #f2f3f2;
+    width: 20%;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1)
+}
+
+.imgWyC{
+    margin-top: 10px;
 }
 
  
