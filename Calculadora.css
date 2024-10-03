@@ -56,7 +56,7 @@ body {
     color: #5ab3df; /* Cambia el color al pasar el ratón */
   }
   
-  .contenedor-1 {
+  .contenedor-1a {
     display: flex;
     background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
     background-image: url("./asset/bidones2.jpg"); /* Ruta a la imagen de fondo */
@@ -89,7 +89,7 @@ body {
   
   
   
-  .div1-contenedor-1{
+  .div1-contenedor-1a{
     width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
     display: flex; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
     margin: 20px 0; /* Añade un espacio vertical entre las secciones */
@@ -462,3 +462,98 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 5%;
   }
+
+ /* Estilo para el contenedor principal de las calculadoras */
+.contenedor-calculadoras {
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente las calculadoras */
+  align-items: flex-start; /* Alinea las calculadoras en la parte superior */
+  gap: 30px; /* Espacio entre cada calculadora */
+  padding: 20px; /* Espacio interno del contenedor */
+  margin: 20px 0; /* Margen externo para separar del resto del contenido */
+}
+
+/* Estilo para cada calculadora */
+.contenedor-calculadoras > div {
+  display: flex; /* Flexbox para alinear el contenido de cada calculadora */
+  flex-direction: column; /* Alinea el contenido de forma vertical */
+  justify-content: flex-start; /* Empieza desde arriba */
+  align-items: center; /* Centra el contenido de cada calculadora */
+  padding: 15px; /* Espaciado interno */
+  background-color: #f0f0f0; /* Fondo para distinguirlas */
+  border: 1px solid #ddd; /* Bordes para separar cada calculadora */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  width: 300px; /* Ancho fijo para cada calculadora */
+  color:#0b0224;
+}
+
+/* Títulos dentro de cada calculadora */
+.contenedor-calculadoras h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los formularios dentro de cada calculadora */
+.contenedor-calculadoras form {
+  display: flex;
+  flex-direction: column; /* Ordena los elementos de forma vertical */
+  align-items: flex-start; /* Alinea a la izquierda */
+  gap: 15px; /* Espacio entre cada elemento del formulario */
+  width: 100%; /* Usa todo el ancho disponible */
+}
+
+/* Estilo de los campos de formulario */
+.contenedor-calculadoras input,
+.contenedor-calculadoras select {
+  width: 100%; /* Campo completo dentro de la calculadora */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+/* Botones dentro de cada calculadora */
+.contenedor-calculadoras button {
+  padding: 10px 20px;
+  background-color: #168AAD; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Separación del botón respecto a los campos */
+}
+
+/* Resultados dentro de cada calculadora */
+.contenedor-calculadoras .result {
+  margin-top: 20px; /* Separación respecto al formulario */
+  background: #e0f7fa; /* Color de fondo para resultados */
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Estilo de texto para resultados */
+.contenedor-calculadoras .result h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contenedor-calculadoras .result p {
+  font-size: 16px;
+  color: #00796b; /* Color del texto de resultado */
+}
+
+/* Otras secciones del contenedor, puedes adaptarlas según necesites */
+.contenedor-4 h1,
+.contenedor-5 h2 {
+  text-align: center;
+  
+}
+
+/* Ajustes para el resto del diseño */
+.contenedor-1a, .contenedor-2, .contenedor-3, .contenedor-7 {
+  margin: 20px;
+  padding: 10px;
+}
