@@ -68,82 +68,80 @@
                 </section>
 
                
-<!--aca estan las calculadoras -->
-<section id="contenedoresDeCalculadoras"  >
-    <div class="contenedor-calculadoras" >
-                <div class="calculadoraArranque" >
-                    <h1>Calculadora de Arranque de Agua</h1>
-                    <form id="calcForm">
-                        <label for="tipoAgua">Selecciona el tipo de agua:</label>
-                        <select id="tipoAgua">
-                            <option value="aguaRed">Agua de Red (Potable)</option>
-                            <option value="aguaPozo1">Agua de Pozo 1</option>
-                            <option value="aguaPozo2">Agua de Pozo 2</option>
-                        </select>
+<!-- Calculadoras de químicos -->
+<section id="contenedoresDeCalculadoras">
+    <div class="contenedor-calculadoras">
+        <!-- Calculadora Arranque -->
+        <div class="calculadoraArranque">
+            <h1>Calculadora de Arranque de Agua</h1>
+            <form id="calcFormArranque">
+                <label for="tipoAguaArranque">Selecciona el tipo de agua:</label>
+                <select id="tipoAguaArranque">
+                    <option value="aguaRed">Agua de Red (Potable)</option>
+                    <option value="aguaPozo1">Agua de Pozo 1</option>
+                    <option value="aguaPozo2">Agua de Pozo 2</option>
+                </select>
 
-                        <label for="volumen">Volumen de la pileta (en m³):</label>
-                        <input type="number" id="volumen" placeholder="Ej. 10" required min="0">
+                <label for="volumenArranque">Volumen de la pileta (en m³):</label>
+                <input type="number" id="volumenArranque" placeholder="Ej. 10" required min="0">
 
-                        <button type="button" onclick="calcular()">Calcular</button>
-                    </form>
+                <button type="button" onclick="calcularArranque()">Calcular</button>
+            </form>
 
-                    <div class="result">
-                        <h2>Resultados</h2>
-                        <p id="resultado"></p>
-                    </div>
+            <div class="result">
+                <h2>Resultados</h2>
+                <p id="resultadoArranque"></p>
+            </div>
+        </div>
 
-                    <script src="calculadora.js"></script>
-                </div>
-<!-- calcu2-->
-                <div class="calculadoraMantenimiento" >
-                    <h1>Calculadora de Mantenimiento de Agua</h1>
-                    <form id="calcForm">
-                        <label for="tipoAgua">Selecciona el tipo de agua:</label>
-                        <select id="tipoAgua">
-                            <option value="aguaRed">Agua de Red (Potable)</option>
-                            <option value="aguaPozo1">Agua de Pozo 1</option>
-                            <option value="aguaPozo2">Agua de Pozo 2</option>
-                        </select>
+        <!-- Calculadora Mantenimiento -->
+        <div class="calculadoraMantenimiento">
+            <h1>Calculadora de Mantenimiento de Agua</h1>
+            <form id="calcFormMantenimiento">
+                <label for="tipoAguaMantenimiento">Selecciona el tipo de agua:</label>
+                <select id="tipoAguaMantenimiento">
+                    <option value="aguaRed">Agua de Red (Potable)</option>
+                    <option value="aguaPozo1">Agua de Pozo 1</option>
+                    <option value="aguaPozo2">Agua de Pozo 2</option>
+                </select>
 
-                        <label for="volumen">Volumen de la pileta (en m³):</label>
-                        <input type="number" id="volumen" placeholder="Ej. 10" required min="0">
+                <label for="volumenMantenimiento">Volumen de la pileta (en m³):</label>
+                <input type="number" id="volumenMantenimiento" placeholder="Ej. 10" required min="0">
 
-                        <button type="button" onclick="calcular()">Calcular</button>
-                    </form>
+                <button type="button" onclick="calcularMantenimiento()">Calcular</button>
+            </form>
 
-                    <div class="result">
-                        <h2>Resultados</h2>
-                        <p id="resultado"></p>
-                    </div>
+            <div class="result">
+                <h2>Resultados</h2>
+                <p id="resultadoMantenimiento"></p>
+            </div>
+        </div>
 
-                    <script src="calculadora.js"></script>
-                </div>
-<!--calcu 3-->
-<div class="calculadoraRecuperacion" >
-    <h1>Calculadora de Recuperación de Agua</h1>
-    <form id="calcForm">
-        <label for="tipoAgua">Selecciona el tipo de agua:</label>
-        <select id="tipoAgua">
-            <option value="aguaRed">Agua de Red (Potable)</option>
-            <option value="aguaPozo1">Agua de Pozo 1</option>
-            <option value="aguaPozo2">Agua de Pozo 2</option>
-        </select>
+        <!-- Calculadora Recuperación -->
+        <div class="calculadoraRecuperacion">
+            <h1>Calculadora de Recuperación de Agua</h1>
+            <form id="calcFormRecuperacion">
+                <label for="tipoAguaRecuperacion">Selecciona el tipo de agua:</label>
+                <select id="tipoAguaRecuperacion">
+                    <option value="aguaRed">Agua de Red (Potable)</option>
+                    <option value="aguaPozo1">Agua de Pozo 1</option>
+                    <option value="aguaPozo2">Agua de Pozo 2</option>
+                </select>
 
-        <label for="volumen">Volumen de la pileta (en m³):</label>
-        <input type="number" id="volumen" placeholder="Ej. 10" required min="0">
+                <label for="volumenRecuperacion">Volumen de la pileta (en m³):</label>
+                <input type="number" id="volumenRecuperacion" placeholder="Ej. 10" required min="0">
 
-        <button type="button" onclick="calcular()">Calcular</button>
-    </form>
+                <button type="button" onclick="calcularRecuperacion()">Calcular</button>
+            </form>
 
-    <div class="result">
-        <h2>Resultados</h2>
-        <p id="resultado"></p>
+            <div class="result">
+                <h2>Resultados</h2>
+                <p id="resultadoRecuperacion"></p>
+            </div>
+        </div>
     </div>
-
-    <script src="calculadora.js"></script>
-</div>
-</div>
 </section>
+
                 <section class="contenedor-4">
                     <h1>___________</h1>
 
