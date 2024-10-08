@@ -57,16 +57,23 @@ function calcular() {
         document.getElementById("display").value = "Error";
     }
 }
-
-//calculadora Arranque
+//aca empiezan las calculadoras
+// Calculadora Arranque
 function calcularArranque() {
-    // entrada de valores
+    // Entrada de valores
     const tipoAgua = document.getElementById('tipoAguaArranque').value;
     const volumen = parseInt(document.getElementById('volumenArranque').value);
     let productos = '';
 
+    // Precios por tipo de agua
+    const precios = {
+        aguaRed: 100, // Precio para agua red
+        aguaPozo1: 120, // Precio para agua pozo 1
+        aguaPozo2: 140 // Precio para agua pozo 2
+    };
+
     if (volumen > 0) {
-        // calcula los productos por tipo de agua y volumen
+        // Calcula los productos por tipo de agua y volumen
         const tabla = {
             aguaRed: [
                 { volumen: 5, cloro: 1, sssAlum: 0.100, bp65: 0.150, bs77: 0.150 },
@@ -80,7 +87,6 @@ function calcularArranque() {
                 { volumen: 80, cloro: 10, sssAlum: 1.0, bp65: 2, bs77: 2 },
                 { volumen: 90, cloro: 10, sssAlum: 1.0, bp65: 2.0, bs77: 2.250 },
                 { volumen: 100, cloro: 15, sssAlum: 1.0, bp65: 2.5, bs77: 2.5 },
-
             ],
             aguaPozo1: [
                 { volumen: 5, cloro: 1, sssAlum: 0.150, bp65: 0.250, bs77: 0.150 },
@@ -114,11 +120,15 @@ function calcularArranque() {
         let data = tabla[tipoAgua].find(item => item.volumen === volumen);
 
         if (data) {
+            const precio = precios[tipoAgua] || 0; // Obtener el precio del tipo de agua
+            const total = precio * volumen; // Calcular el total
+
             productos = `
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
                 <strong>SSS Alum:</strong> ${data.sssAlum} Lts<br>
                 <strong>BP65:</strong> ${data.bp65} Lts<br>
-                <strong>BS77:</strong> ${data.bs77} Lts
+                <strong>BS77:</strong> ${data.bs77} Lts<br>
+                <strong>Precio total:</strong> $${total.toFixed(2)}
             `;
         } else {
             productos = 'No se encontraron datos para el volumen especificado.';
@@ -127,7 +137,7 @@ function calcularArranque() {
         productos = 'Por favor, ingresa un volumen válido.';
     }
 
-    // Mostrar resultado
+    // Mostrar resultado en el lugar correcto
     document.getElementById('resultadoArranque').innerHTML = productos;
 }
 
@@ -138,26 +148,19 @@ function calcularMantenimiento() {
     const volumen = parseInt(document.getElementById('volumenMantenimiento').value);
     let productos = '';
 
+    // Precios por tipo de agua
+    const precios = {
+        aguaRed: 100, // Precio para agua red
+        aguaPozo1: 120, // Precio para agua pozo 1
+        aguaPozo2: 140 // Precio para agua pozo 2
+    };
+
     if (volumen > 0) {
         // calcula los productos por tipo de agua y volumen
         const tabla = {
             aguaRed: [
                 { volumen: 5, cloro: 0.3, sssAlum: 0.1, bp65: 0.05, bs77: 0.2 },
                 { volumen: 10, cloro: 0.6, sssAlum: 0.2, bp65: 0.1, bs77: 0.4 },
-                { volumen: 20, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 30, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 40, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 50, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 60, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 70, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 80, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 90, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 100, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                
-            ],
-            aguaPozo1: [
-                { volumen: 5, cloro: 0.35, sssAlum: 0.15, bp65: 0.07, bs77: 0.25 },
-                { volumen: 10, cloro: 0.7, sssAlum: 0.3, bp65: 0.14, bs77: 0.5 },
                 { volumen: 20, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
                 { volumen: 30, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
                 { volumen: 40, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
@@ -187,11 +190,15 @@ function calcularMantenimiento() {
         let data = tabla[tipoAgua].find(item => item.volumen === volumen);
 
         if (data) {
+            const precio = precios[tipoAgua] || 0; // Obtener el precio del tipo de agua
+            const total = precio * volumen; // Calcular el total
+
             productos = `
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
                 <strong>SSS Alum:</strong> ${data.sssAlum} Lts<br>
                 <strong>BP65:</strong> ${data.bp65} Lts<br>
-                <strong>BS77:</strong> ${data.bs77} Lts
+                <strong>BS77:</strong> ${data.bs77} Lts<br>
+                <strong>Precio total:</strong> $${total.toFixed(2)}
             `;
         } else {
             productos = 'No se encontraron datos para el volumen especificado.';
@@ -211,47 +218,54 @@ function calcularRecuperacion() {
     const volumen = parseInt(document.getElementById('volumenRecuperacion').value);
     let productos = '';
 
+    // Precios por tipo de agua
+    const precios = {
+        aguaRed: 100, // Precio para agua red
+        aguaPozo1: 120, // Precio para agua pozo 1
+        aguaPozo2: 140 // Precio para agua pozo 2
+    };
+
     if (volumen > 0) {
         // calcula los productos por tipo de agua y volumen
         const tabla = {
             aguaRed: [
                 { volumen: 5, cloro: 0.5, sssAlum: 0.2, bp65: 0.3, bs77: 0.4 },
-                { volumen: 10, cloro: 1, sssAlum: 0.4, bp65: 0.6, bs77: 0.8 },
-                { volumen: 20, cloro: 2, sssAlum: 0.8, bp65: 1.2, bs77: 1.6 },
-                { volumen: 30, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 40, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 50, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 60, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 70, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 80, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 90, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 100, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
+                { volumen: 10, cloro: 1.0, sssAlum: 0.4, bp65: 0.6, bs77: 0.8 },
+                { volumen: 20, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 30, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 40, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 50, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 60, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 70, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 80, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 90, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 100, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
             ],
             aguaPozo1: [
-                { volumen: 5, cloro: 0.55, sssAlum: 0.25, bp65: 0.35, bs77: 0.5 },
-                { volumen: 10, cloro: 1.1, sssAlum: 0.5, bp65: 0.7, bs77: 1 },
-                { volumen: 20, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 30, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 40, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 50, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 60, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 70, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 80, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 90, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 100, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
+                { volumen: 5, cloro: 0.55, sssAlum: 0.25, bp65: 0.35, bs77: 0.45 },
+                { volumen: 10, cloro: 1.1, sssAlum: 0.5, bp65: 0.7, bs77: 0.9 },
+                { volumen: 20, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 30, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 40, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 50, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 60, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 70, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 80, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 90, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 100, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
             ],
             aguaPozo2: [
-                { volumen: 5, cloro: 0.6, sssAlum: 0.3, bp65: 0.4, bs77: 0.6 },
-                { volumen: 10, cloro: 1.2, sssAlum: 0.6, bp65: 0.8, bs77: 1.2 },
-                { volumen: 20, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 30, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 40, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 50, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 60, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 70, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 80, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 90, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
-                { volumen: 100, cloro: 1.2, sssAlum: 0.4, bp65: 0.2, bs77: 0.8 },
+                { volumen: 5, cloro: 0.6, sssAlum: 0.3, bp65: 0.4, bs77: 0.5 },
+                { volumen: 10, cloro: 1.2, sssAlum: 0.5, bp65: 0.8, bs77: 1.0 },
+                { volumen: 20, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 30, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 40, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 50, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 60, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 70, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 80, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 90, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
+                { volumen: 100, cloro: 1.5, sssAlum: 0.6, bp65: 0.9, bs77: 1.2 },
             ],
         };
 
@@ -259,11 +273,15 @@ function calcularRecuperacion() {
         let data = tabla[tipoAgua].find(item => item.volumen === volumen);
 
         if (data) {
+            const precio = precios[tipoAgua] || 0; // Obtener el precio del tipo de agua
+            const total = precio * volumen; // Calcular el total
+
             productos = `
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
                 <strong>SSS Alum:</strong> ${data.sssAlum} Lts<br>
                 <strong>BP65:</strong> ${data.bp65} Lts<br>
-                <strong>BS77:</strong> ${data.bs77} Lts
+                <strong>BS77:</strong> ${data.bs77} Lts<br>
+                <strong>Precio total:</strong> $${total.toFixed(2)}
             `;
         } else {
             productos = 'No se encontraron datos para el volumen especificado.';
