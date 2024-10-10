@@ -64,6 +64,8 @@ function calcularArranque() {
     const tipoAgua = document.getElementById('tipoAguaArranque').value;
     const volumen = parseInt(document.getElementById('volumenArranque').value);
     let productos = '';
+    
+
 
     // Precios por tipo de agua
     const precios = {
@@ -308,3 +310,23 @@ function calcularRecuperacion() {
     // Mostrar resultado
     document.getElementById('resultadoRecuperacion').innerHTML = productos;
 }
+
+
+
+// Manejar consideraciones
+const consideraciones = document.querySelectorAll('.consideracionTitulo');
+
+consideraciones.forEach(consideracion => {
+    consideracion.addEventListener('click', function() {
+        const contenedorConsideracion = this;
+        contenedorConsideracion.classList.toggle('pregunta-activa');
+        
+        // Selecciona el cuerpo correspondiente de la consideracion
+        const respuesta = contenedorConsideracion.querySelector('.cuerpoConsideracion');
+        respuesta.style.display = respuesta.style.display === 'block' ? 'none' : 'block';
+        
+        // Selecciona la flecha dentro del h2 y cambia su símbolo
+        const flecha = contenedorConsideracion.querySelector('.flecha');
+        flecha.innerHTML = respuesta.style.display === 'block' ? '&#9652;' : '&#9662;';
+    });
+});

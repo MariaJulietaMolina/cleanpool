@@ -203,7 +203,8 @@ body {
   
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
-    transition: transform 0.5s ease;  
+    transition: transform 0.5s ease; 
+    will-change: transform; /* Optimiza las animaciones de escala */ 
     
   }
   
@@ -257,7 +258,7 @@ body {
   font-size: 30px;
   text-align: center;
   opacity: 80%;
-  color: #037971;
+  color:#001524;
   background-color: rgb(251, 253, 255);}
   
   .contenedor-6{
@@ -463,6 +464,20 @@ body {
     margin-left: 5%;
   }
 
+  .subCal11{
+    display: flex;
+    justify-content: center;
+    color:#000000;
+    margin-top: -5%;
+  }
+  .subCal112{
+    display: flex;
+    justify-content: center;
+    color:#e6eaee;
+  }
+
+
+
  /* Estilo para el contenedor principal de las calculadoras */
 .contenedor-calculadoras {
   display: flex; /* Activa Flexbox */
@@ -556,4 +571,13 @@ body {
 .contenedor-1a, .contenedor-2, .contenedor-3, .contenedor-7 {
   margin: 20px;
   padding: 10px;
+}
+
+.consideracionesTOTAL{
+    background-color:#a5d2e9;
+    margin-inline: 5em;
+}
+
+.titulo-consideraciones{
+  text-align: center;
 }

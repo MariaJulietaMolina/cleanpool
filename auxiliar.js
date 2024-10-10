@@ -228,3 +228,17 @@ function calcularRecuperacion() {
     // Mostrar resultado
     document.getElementById('resultadoRecuperacion').innerHTML = productos;
 }
+
+// Manejar consideraciones
+const consideraciones = document.querySelectorAll('.consideracionTitulo');
+
+preguntas.forEach(pregunta => {
+    pregunta.addEventListener('click', function() {
+        const contenedorConsideracion = this.parentNode;
+        contenedorConsideracion.classList.toggle('pregunta-activa');
+        const respuesta = contenedorConsideracion.querySelector('.cuerpoConsideracion');
+        respuesta.style.display = respuesta.style.display === 'block' ? 'none' : 'block';
+        const flecha = this.querySelector('.flecha');
+        flecha.innerHTML = respuesta.style.display === 'block' ? '&#9652;' : '&#9662;';
+    });
+});
