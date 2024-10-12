@@ -340,3 +340,27 @@ menuIcon.addEventListener('click', () => {
   navMenu.classList.toggle('menu-open'); // Añade o quita la clase que abre el menú
 });
 
+
+//Carrousel
+let currentIndex = 0;
+
+function moverCarrusel(direccion) {
+    const carrusel = document.querySelector('.carrusel');
+    const images = document.querySelectorAll('.carrusel img');
+    const totalImages = images.length;
+
+    // Calcular el nuevo índice
+    currentIndex += direccion;
+
+    // Si llega al final, volver al principio, y viceversa
+    if (currentIndex >= totalImages) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = totalImages - 1;
+    }
+
+    // Mover el carrusel con base en el índice actual
+    const offset = -currentIndex * 100;
+    carrusel.style.transform = `translateX(${offset}%)`;
+}
+
