@@ -1,4 +1,12 @@
 /* Establece el color de fondo de todo el cuerpo de la página a blanco */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   margin: 0; /* Elimina el margen por defecto */
@@ -10,7 +18,7 @@ body {
   width: 100%;
   background-color: white; /* Un ligero gris para distinguir la barra de navegación */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
-  padding: 10px 0; /* Espacio superior e inferior dentro del div */
+  padding: 1rem 0; /* Espacio superior e inferior dentro del div */
 }
 
 nav {
@@ -25,22 +33,26 @@ nav {
 
 /* Estilo del logo */
 nav img {
-  height: 55px; /* Altura del logo */
-  margin-right: -5px; /* Espacio a la derecha del logo */
-  margin-left: 10px;
+  height: 3rem; /* Altura del logo */
+  margin-right: -5em; /* Espacio a la derecha del logo */
+  margin-left: 2em;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.contenedor-nav {
   display: flex;
-  justify-content: center; /* Ajusta según sea necesario */
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Estilo de los items de la lista */
-nav ul li {
-  margin-right: 23px; /* Espacio entre los ítems */
+.contenedor-nav nav ul {
+ list-style-type: none;
+ margin-left: 35em;
+}
+
+.contenedor-nav nav ul li {
+  display: inline;
+  margin-left: 2em; 
+  
 }
 
 
@@ -68,7 +80,7 @@ nav ul li a:hover {
 
 .contenedor-a {
   background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
-  background-image: url("./asset/IMAGENES CLEANPOOL/fondo-3.jpg"); /* Corrige la ruta si es necesario */
+  background-image: url("./asset/IMAGENES CLEANPOOL/fondo-3.jpg"); 
   background-size: cover; /* Asegura que la imagen cubra todo el div */
   background-position: center; /* Centra la imagen dentro del div */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -92,7 +104,7 @@ nav ul li a:hover {
 .div1-contenedor-1{
   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
   display: flex; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-  margin: 20px 0; /* Añade un espacio vertical entre las secciones */
+  margin: 5rem 0; /* Añade un espacio vertical entre las secciones */
   font-family: "Noto Sans JP", sans-serif;
   text-shadow: 2px 2px 4px #001524;
 }
@@ -398,22 +410,7 @@ background-color: rgb(251, 253, 255);}
   margin-right: 20px;
 }
 
-.contenedor-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.contenedor-nav nav ul {
- list-style-type: none;
- margin-left: 450px;
-}
-
-.contenedor-nav nav ul li {
-  display: inline;
-  margin-left: 20px; /
-  
-}
 
 .div1-contenedor-1 img{
   width: 600px;
@@ -457,4 +454,67 @@ background-color: #001524;
 
 
 
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+.active{
+  color:#52B69A;
+}
+
 /*INICIO DE MEDIA QUERYS*/
+
+/* Media Query para pantallas pequeñas */
+
+@media (max-width: 1024px) {
+  /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color:#001524;
+  }
+
+  /* Esconder el menú inicialmente (movido hacia arriba) */
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background: #168AAD;
+    top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+    left: 0;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.5s ease; /* Animación suave */
+  }
+
+  /* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo) */
+  #check:checked ~ ul {
+    top: 80px; /* Menú visible, desplegándose desde arriba */
+  }
+
+  /* Los enlaces en formato de bloque */
+  nav ul li {
+    margin: 20px 0;
+  }
+
+  /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+  nav ul li a {
+    font-size: 20px;
+    color: #f2f3f2;
+  }
+  .active{
+    color: #c7e4f3;
+  }
+}

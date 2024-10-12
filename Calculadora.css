@@ -581,3 +581,69 @@ body {
 .titulo-consideraciones{
   text-align: center;
 }
+
+
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+.active{
+  color:#52B69A;
+}
+
+/*INICIO DE MEDIA QUERYS*/
+
+/* Media Query para pantallas pequeñas */
+
+@media (max-width: 1024px) {
+  /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color:#001524;
+  }
+
+  /* Esconder el menú inicialmente (movido hacia arriba) */
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background: #168AAD;
+    top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+    left: 0;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.5s ease; /* Animación suave */
+  }
+
+  /* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo) */
+  #check:checked ~ ul {
+    top: 80px; /* Menú visible, desplegándose desde arriba */
+  }
+
+  /* Los enlaces en formato de bloque */
+  nav ul li {
+    margin: 20px 0;
+  }
+
+  /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+  nav ul li a {
+    font-size: 20px;
+    color: #f2f3f2;
+  }
+  .active{
+    color: #c7e4f3;
+  }
+}

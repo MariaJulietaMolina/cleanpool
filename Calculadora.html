@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="Calculadora.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <title>CLEANPOOL</title>
 </head>
@@ -23,9 +24,16 @@
 
     <header class="contenedor-nav">
         <nav>
-            <img src="./asset/cleanpool_original_color.jpg" alt="logo cleanpool">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" ></i>
+            </label>
+            
+            <a href="index.html" class="enlace" >
+                <img src="./asset/cleanpool_original_color.jpg" alt="logo cleanpool" class="logoCleanpoolNav">
+            </a>
             <ul>
-                <li><a style="color:#52B69A;" href="index.html">Inicio</a></li>
+                <li><a href="index.html" class="active" >Inicio</a></li>
                 <li><a href="cleanpool.html">Cleanpool</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="galeria.html">Galería</a></li>
