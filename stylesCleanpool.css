@@ -509,8 +509,8 @@ display: inline-flex;
 }
 
 /*INICIO DE MEDIA QUERYS*/
-
 /* Media Query para pantallas pequeñas */
+
 @media (max-width: 430px) {
   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
   .checkbtn {
@@ -555,6 +555,15 @@ display: inline-flex;
   }
 
   /*ahi termina el bendito menu hamburguesa*/
+ 
+  .div2-contenedor-1 {
+    color: #f2f3f4;
+    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+    margin-top: 5%; 
+    
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+   }
 
   .div1-contenedor-1 div img{
     width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
@@ -571,14 +580,14 @@ display: inline-flex;
   }
 
   .div2-contenedor-1 h3 {
-   font-size: 150%;
+   font-size: 120%;
    
   }
   .div2-contenedor-1 h2 {
     display: none;
    }
    .div2-contenedor-1 p {
-    font-size: 80%;
+    font-size: 65%;
    }
 
    .button-CentradoV  {
@@ -587,7 +596,7 @@ display: inline-flex;
     bottom: 0; /* Coloca el botón en la parte inferior del contenedor */
     z-index: 10; /* Asegura que el botón quede delante de los otros elementos */
     transform: translateY(-450%);
-   margin-left: -47%;
+   margin-left: -50%;
 }
 
 .button-CentradoV button {
@@ -600,6 +609,10 @@ display: inline-flex;
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
+.contenedor-2{
+  background-color: white;
+  
+}
 .contenedor-2 div p{
   font-size: 70%;
 }
@@ -609,6 +622,8 @@ display: inline-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 65%;
+  margin-left: 20%;
 }
 
 .card {
@@ -634,10 +649,11 @@ display: inline-flex;
   font-size: 60%;
   margin-bottom: -7%;
 }
-.card:hover {
-  transform: scale(1.05); /* Aumenta el tamaño un 5% */
-}
 
+
+.contenedor-5{
+  margin-top: 5%;
+}
  
 /*calculadoras*/
 .contenedor-6{
@@ -675,7 +691,7 @@ display: inline-flex;
 
 .btn-contenedor-7{
   transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
-  margin-left: 19%;
+  margin-left: 13%;
 }
 
 .img-niños img{
@@ -683,7 +699,48 @@ display: inline-flex;
 }
 
 .footer-izquierdo{
-  font-size: 80%;
+  margin-top: 5%;
+  font-size: 50%;
+ 
+}
+.logosFC{
+  transform: scale(0.8);
 }
   
   }
+
+
+/*lasquerys del chat.. modfificadas*/
+/* Para pantallas de hasta 320px */
+@media (max-width: 320px) {
+  /* Ajusta los estilos según el diseño deseado para pantallas muy pequeñas */
+ 
+
+
+  
+}
+
+/* Para pantallas de hasta 480px */
+@media (max-width: 480px) {
+
+}
+
+/* Para pantallas de hasta 768px */
+@media (max-width: 768px) {
+  
+}
+
+/* Para pantallas de hasta 960px */
+@media (max-width: 960px) {
+ 
+}
+
+/* Para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+ 
+}
+
+/* Para pantallas de 1326px en adelante */
+@media (min-width: 1326px) {
+  /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
+}

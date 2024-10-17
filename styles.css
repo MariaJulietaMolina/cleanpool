@@ -572,13 +572,15 @@ background-color: #001524;
 }
 
 .button-CentradoV button {
-  padding: 10px 20px; /* Ajusta el tamaño del botón */
-  font-size: 16px; /* Tamaño del texto */
-  background-color: #168AAD; /* Color de fondo del botón */
-  color: #fff; /* Color del texto */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  padding: 10px 20px;
+  font-size: 1rem; /* Usa unidades relativas para adaptar el tamaño */
+  background-color: #168AAD;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 100%; /* Asegura que el botón ocupe todo el ancho del contenedor */
+  max-width: 300px; /* Establece un ancho máximo para evitar que se agrande demasiado */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del botón */
 }
 
 .contenedor-2{
@@ -694,9 +696,11 @@ background-color: #001524;
 
 /* Para pantallas de hasta 480px */
 @media (max-width: 480px) {
-
+  .button-CentradoV button {
+    font-size: 0.875rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    padding: 8px 16px; /* Reduce el padding en dispositivos más pequeños */
+  }
 }
-
 /* Para pantallas de hasta 768px */
 @media (max-width: 768px) {
   
