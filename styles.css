@@ -193,7 +193,7 @@ button:hover {
   text-align: center;
   color: #037971;
   opacity: 80%;
-  background-color: aliceblue;
+
 
 }
 
@@ -527,6 +527,15 @@ background-color: #001524;
   }
 
   /*ahi termina el bendito menu hamburguesa*/
+ 
+  .div2-contenedor-1 {
+    color: #f2f3f4;
+    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+    margin-top: 5%; 
+    
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+   }
 
   .div1-contenedor-1 div img{
     width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
@@ -543,14 +552,14 @@ background-color: #001524;
   }
 
   .div2-contenedor-1 h3 {
-   font-size: 150%;
+   font-size: 130%;
    
   }
   .div2-contenedor-1 h2 {
     display: none;
    }
    .div2-contenedor-1 p {
-    font-size: 80%;
+    font-size: 70%;
    }
 
    .button-CentradoV  {
@@ -559,7 +568,7 @@ background-color: #001524;
     bottom: 0; /* Coloca el botón en la parte inferior del contenedor */
     z-index: 10; /* Asegura que el botón quede delante de los otros elementos */
     transform: translateY(-450%);
-   margin-left: -47%;
+   margin-left: -50%;
 }
 
 .button-CentradoV button {
@@ -650,7 +659,7 @@ background-color: #001524;
 
 .btn-contenedor-7{
   transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
-  margin-left: 16%;
+  margin-left: 13%;
 }
 
 .img-niños img{
