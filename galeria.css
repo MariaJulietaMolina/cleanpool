@@ -217,7 +217,7 @@ margin-left: 11%;
   display: flex;
   justify-content: center;
   font-size: 35px;
-  color: #001524;
+  color:#1E6091;
 }
 
 .imagenGigante {
@@ -271,55 +271,117 @@ margin-left: 11%;
 .texto-div1-contenedor-c p {
   text-align: justify;
   font-size: 25px;
-  color: #001524;
+  color:#1E6091;
 }
 
 
 /* Estilos para la sección listado-clientes-galeria */
-.listado-clientes-galeria {
-  /* Agrega tus estilos aquí */
-  display:inline-flex;
+/* Contenedor principal del listado y las imágenes */
+.listadoYCarousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-
-.listado-clientes-galeria h2 {
-  font-size: 35px;
-  text-align: center;
-  color: #001524;
- 
-
+/* Estilos para la lista de clientes */
+.listado-clientes {
+  flex: 1;
+  padding: 20px;
 }
 
 .listado-clientes ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  column-count: 1; /* Divide la lista en 3 columnas */
+  column-gap: 20px; /* Espacio entre columnas */
   font-size: 20px;
-  color: #4b4a48;
-  display:block;
-  
 }
+
+.listado-clientes ul li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para la galería de imágenes */
+.contenedor-galeria-imagenes-clientes {
+  flex: 1;
+  display: flex; /* Corrigiendo "flexbox" por "flex" */
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contenedor-galeria-imagenes-clientes img {
+  width: 90%;
+  height: auto;
+  max-width: 250px; /* Para limitar el tamaño máximo de las imágenes */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 15px; /* Añade margen a la derecha */
+}
+
+/* Intercalado de imágenes en pantallas más grandes */
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 900px) {
+  .listadoYCarousel {
+      flex-direction: column;
+  }
+
+  .listado-clientes ul {
+      column-count: 2; /* Cambia a 2 columnas en pantallas pequeñas */
+  }
+
+  .contenedor-galeria-imagenes-clientes img {
+      max-width: 100%; /* Asegura que las imágenes no superen el ancho de la pantalla */
+  }
+}
+
+@media (max-width: 600px) {
+  .listado-clientes ul {
+      column-count: 1; /* Cambia a 1 columna en pantallas más pequeñas */
+  }
+}
+
+
+
+
 
 
 /* Estilos para la sección contenedor-galeria-imagenes-clientes */
+/* Estilos para el contenedor del carrusel */
 .contenedor-galeria-imagenes-clientes {
-display: flex;
-justify-content: end;
-display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Ajusta esto según tus necesidades */
+  overflow: hidden;
+  margin: 0 auto; /* Centrar el carrusel */
 }
 
-.listadoYCarousel{
-display: flex;
+/* Estilos para el carrusel */
+.carrusel {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Suaviza el movimiento */
+}
+
+/* Asegura que las imágenes ocupen el 100% del contenedor */
+.carrusel img {
+  width: 100%;
+  max-width: 100%;
+  flex-shrink: 0; /* Esto es importante para que las imágenes no colapsen */
 }
 
 
 
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
+
+
 #check{
   display: none;
 }

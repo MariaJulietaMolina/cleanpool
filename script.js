@@ -1,26 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Cambiar el fondo del contenedor
-    var imagenesFondo = ['./assets/fondo-1.jpg', './assets/fondo-2.jpg', './assets/fondo-3.jpg'];
-    var actualFondo = 0;
-    var contenedorFondo = document.querySelector('.contenedor-1');
-
-    setInterval(function() {
-        actualFondo = (actualFondo + 1) % imagenesFondo.length;
-        contenedorFondo.style.backgroundImage = 'url(' + imagenesFondo[actualFondo] + ')';
-    }, 5000); // Cambia la imagen cada 5000 milisegundos (5 segundos)
-
-    // Cambiar las imágenes de la galería
-    let imagenesGaleria = document.querySelectorAll('.galeria img');
-    let indiceActualGaleria = 0;
-
-    function cambiarImagenGaleria() {
-        imagenesGaleria[indiceActualGaleria].classList.remove('active');
-        indiceActualGaleria = (indiceActualGaleria + 1) % imagenesGaleria.length;
-        imagenesGaleria[indiceActualGaleria].classList.add('active');
-    }
-
-    setInterval(cambiarImagenGaleria, 3000); // Cambia cada 3000 milisegundos (3 segundos)
-
     // Manejar preguntas frecuentes
     const preguntas = document.querySelectorAll('.pregunta-titulo');
 
@@ -34,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             flecha.innerHTML = respuesta.style.display === 'block' ? '&#9652;' : '&#9662;';
         });
     });
-});
+
 
 // Calculadora
 function concatenar(valor) {
@@ -339,28 +316,4 @@ const navMenu = document.querySelector('nav ul');
 menuIcon.addEventListener('click', () => {
   navMenu.classList.toggle('menu-open'); // Añade o quita la clase que abre el menú
 });
-
-
-//Carrousel
-let currentIndex = 0;
-
-function moverCarrusel(direccion) {
-    const carrusel = document.querySelector('.carrusel');
-    const images = document.querySelectorAll('.carrusel img');
-    const totalImages = images.length;
-
-    // Calcular el nuevo índice
-    currentIndex += direccion;
-
-    // Si llega al final, volver al principio, y viceversa
-    if (currentIndex >= totalImages) {
-        currentIndex = 0;
-    } else if (currentIndex < 0) {
-        currentIndex = totalImages - 1;
-    }
-
-    // Mover el carrusel con base en el índice actual
-    const offset = -currentIndex * 100;
-    carrusel.style.transform = `translateX(${offset}%)`;
-}
 
