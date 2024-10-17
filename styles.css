@@ -552,14 +552,14 @@ background-color: #001524;
   }
 
   .div2-contenedor-1 h3 {
-   font-size: 130%;
+   font-size: 120%;
    
   }
   .div2-contenedor-1 h2 {
     display: none;
    }
    .div2-contenedor-1 p {
-    font-size: 70%;
+    font-size: 65%;
    }
 
    .button-CentradoV  {
@@ -581,6 +581,10 @@ background-color: #001524;
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
+.contenedor-2{
+  background-color: white;
+  
+}
 .contenedor-2 div p{
   font-size: 70%;
 }
