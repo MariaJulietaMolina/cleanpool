@@ -655,7 +655,11 @@ background-color: #001524;
 }
 
 .footer-izquierdo{
-  font-size: 80%;
+  font-size: 30%;
+ 
+}
+.logosFC{
+  transform: scale(0.7);
 }
   
   }

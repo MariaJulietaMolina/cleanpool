@@ -511,14 +511,13 @@ display: inline-flex;
 /*INICIO DE MEDIA QUERYS*/
 
 /* Media Query para pantallas pequeñas */
-
-@media (max-width: 1024px) {
+@media (max-width: 430px) {
   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
   .checkbtn {
     display: block;
     position: absolute;
     right: 20px;
-    top: 20px;
+   
     color:#001524;
   }
 
@@ -529,16 +528,17 @@ display: inline-flex;
     height: auto;
     background: #168AAD;
     top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
-    left: 0;
+    right: 0; /* Mover el menú al lado derecho */
     text-align: center;
-    flex-direction: column;
+    display: flexbox;
     transition: all 0.5s ease; /* Animación suave */
-  }
+}
 
-  /* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo) */
-  #check:checked ~ ul {
-    top: 80px; /* Menú visible, desplegándose desde arriba */
-  }
+/* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
+#check:checked ~ ul {
+  top: 80px; /* Menú visible, desplegándose desde arriba */
+  right: 0; /* Mantenerlo en el lado derecho */
+}
 
   /* Los enlaces en formato de bloque */
   nav ul li {
@@ -553,4 +553,137 @@ display: inline-flex;
   .active{
     color: #c7e4f3;
   }
+
+  /*ahi termina el bendito menu hamburguesa*/
+
+  .div1-contenedor-1 div img{
+    width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
+    margin-left: 10%;
+  }
+
+  .div1-contenedor-1 div{
+    margin-top: -2em;
+      max-height: 200px;  /* Ajusta este valor según tu diseño */
+      overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
+    
+  }
+
+  .div2-contenedor-1 h3 {
+   font-size: 150%;
+   
+  }
+  .div2-contenedor-1 h2 {
+    display: none;
+   }
+   .div2-contenedor-1 p {
+    font-size: 80%;
+   }
+
+   .button-CentradoV  {
+    position: absolute; /* Posiciona el botón de forma absoluta */
+   
+    bottom: 0; /* Coloca el botón en la parte inferior del contenedor */
+    z-index: 10; /* Asegura que el botón quede delante de los otros elementos */
+    transform: translateY(-450%);
+   margin-left: -47%;
 }
+
+.button-CentradoV button {
+  padding: 10px 20px; /* Ajusta el tamaño del botón */
+  font-size: 16px; /* Tamaño del texto */
+  background-color: #168AAD; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.contenedor-2 div p{
+  font-size: 70%;
+}
+
+/*loguitos raros*/
+.contenedor-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #d5dff1;
+  margin-bottom: 20px;
+  padding: 2px; /* Ajusta el espacio interno para hacerlo más compacto */
+}
+
+.loguitos-cards {
+  width: 19%; /* Ajusta el tamaño de las imágenes */
+  height: 16%; /* Asegúrate de que las imágenes sean cuadradas */
+}
+
+.card-info h3 {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto del título */
+}
+
+.card-info p {
+  font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+}
+
+.titulo-cards{
+  font-size: 60%;
+  margin-bottom: -7%;
+}
+.card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño un 5% */
+}
+
+ 
+/*calculadoras*/
+.contenedor-6{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-info2 h3{
+  font-size: 140%;
+}
+
+.card2 img {
+  width: 70%;
+}
+
+.contenedor-7{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.titulo-contenedor-7{
+  font-size: 100%;
+  margin-left: -1%;
+}
+.parrafo-contenedor-7 pre { 
+  font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+    padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+    line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+    white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+    text-align: center;
+}
+
+.btn-contenedor-7{
+  transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+  margin-left: 19%;
+}
+
+.img-niños img{
+  margin-left: 3%;
+}
+
+.footer-izquierdo{
+  font-size: 80%;
+}
+  
+  }
