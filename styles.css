@@ -581,6 +581,8 @@ background-color: #001524;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 65%;
+  margin-left: 20%;
 }
 
 .card {
@@ -606,10 +608,11 @@ background-color: #001524;
   font-size: 60%;
   margin-bottom: -7%;
 }
-.card:hover {
-  transform: scale(1.05); /* Aumenta el tamaño un 5% */
-}
 
+
+.contenedor-5{
+  margin-top: 5%;
+}
  
 /*calculadoras*/
 .contenedor-6{
