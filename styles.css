@@ -695,17 +695,17 @@ background-color: #001524;
 }
 
 /* Para pantallas de hasta 480px */
-@media (max-width: 480px) {
+@media  (min-width: 431px) and (max-width: 480px) {
   .button-CentradoV button {
     font-size: 0.875rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
     padding: 8px 16px; /* Reduce el padding en dispositivos más pequeños */
   }
 }
 /* Para pantallas de hasta 720px */
-@media (max-width: 720px) {
+@media  (min-width: 481px) and (max-width: 720px) {
   .button-CentradoV button {
     font-size: 0.9rem; /* Reduce un poco el tamaño del texto */
-    padding: 8px 16px; /* Ajusta el padding */
+    padding: 15px 16px; /* Ajusta el padding */
   }
 }
 /* Para pantallas de hasta 960px */
