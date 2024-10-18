@@ -322,6 +322,7 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
     right: 0; /* Mover el menú al lado derecho */
     text-align: center;
     display: flexbox;
+    z-index: 2; /* Coloca el menú por encima de la imagen */
     transition: all 0.5s ease; /* Animación suave */
 }
 
