@@ -511,7 +511,7 @@ display: inline-flex;
 /*INICIO DE MEDIA QUERYS*/
 /* Media Query para pantallas pequeñas */
 
-@media (max-width: 430px) {
+@media (max-width: 730px) {
   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
   .checkbtn {
     display: block;
@@ -566,7 +566,7 @@ display: inline-flex;
    }
 
   .div1-contenedor-1 div img{
-    width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+    width: 90%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
     height: auto; /* Mantiene la proporción original de la imagen */
     object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
     margin-left: 10%;
@@ -577,6 +577,10 @@ display: inline-flex;
       max-height: 200px;  /* Ajusta este valor según tu diseño */
       overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
     
+  }
+  .div2-contenedor-1{
+  display: block;
+  align-items: center;
   }
 
   .div2-contenedor-1 h3 {
@@ -591,23 +595,17 @@ display: inline-flex;
    }
 
    .button-CentradoV  {
-    position: absolute; /* Posiciona el botón de forma absoluta */
-   
-    bottom: 0; /* Coloca el botón en la parte inferior del contenedor */
-    z-index: 10; /* Asegura que el botón quede delante de los otros elementos */
-    transform: translateY(-450%);
-   margin-left: -50%;
+   display: none;
 }
 
-.button-CentradoV button {
-  padding: 10px 20px; /* Ajusta el tamaño del botón */
-  font-size: 16px; /* Tamaño del texto */
-  background-color: #168AAD; /* Color de fondo del botón */
-  color: #fff; /* Color del texto */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+.button-CentradoV2{
+  display: flex;
+    justify-content: center; /* Centra el div horizontalmente */
+    align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
+  
 }
+
+
 
 .contenedor-2{
   background-color: white;
@@ -721,14 +719,12 @@ display: inline-flex;
 }
 
 /* Para pantallas de hasta 480px */
-@media (max-width: 480px) {
 
+/* Para pantallas de hasta 720px */
+@media  (min-width: 481px) and (max-width: 720px) {
+ 
 }
 
-/* Para pantallas de hasta 768px */
-@media (max-width: 768px) {
-  
-}
 
 /* Para pantallas de hasta 960px */
 @media (max-width: 960px) {

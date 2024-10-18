@@ -371,14 +371,15 @@ justify-content: center; /* Centra las cards en la fila */
 /*INICIO DE MEDIA QUERYS*/
 
 /* Media Query para pantallas pequeñas */
+/* Media Query para pantallas pequeñas */
 
-@media (max-width: 1024px) {
+@media (max-width: 730px) {
   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
   .checkbtn {
     display: block;
     position: absolute;
     right: 20px;
-    top: 20px;
+   
     color:#001524;
   }
 
@@ -389,16 +390,17 @@ justify-content: center; /* Centra las cards en la fila */
     height: auto;
     background: #168AAD;
     top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
-    left: 0;
+    right: 0; /* Mover el menú al lado derecho */
     text-align: center;
-    flex-direction: column;
+    display: flexbox;
     transition: all 0.5s ease; /* Animación suave */
-  }
+}
 
-  /* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo) */
-  #check:checked ~ ul {
-    top: 80px; /* Menú visible, desplegándose desde arriba */
-  }
+/* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
+#check:checked ~ ul {
+  top: 80px; /* Menú visible, desplegándose desde arriba */
+  right: 0; /* Mantenerlo en el lado derecho */
+}
 
   /* Los enlaces en formato de bloque */
   nav ul li {
@@ -413,4 +415,190 @@ justify-content: center; /* Centra las cards en la fila */
   .active{
     color: #c7e4f3;
   }
+
+  /*ahi termina el bendito menu hamburguesa*/
+ 
+  .div2-contenedor-1 {
+    color: #f2f3f4;
+    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+    margin-top: 5%; 
+    
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+   }
+
+  .div1-contenedor-1 div img{
+    width: 90%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
+    margin-left: 10%;
+  }
+
+  .div1-contenedor-1 div{
+    margin-top: -2em;
+      max-height: 200px;  /* Ajusta este valor según tu diseño */
+      overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
+    
+  }
+  .div2-contenedor-1{
+  display: block;
+  align-items: center;
+  }
+
+  .div2-contenedor-1 h3 {
+   font-size: 120%;
+   
+  }
+  .div2-contenedor-1 h2 {
+    display: none;
+   }
+   .div2-contenedor-1 p {
+    font-size: 65%;
+   }
+
+   .button-CentradoV  {
+   display: none;
+}
+
+.button-CentradoV2{
+  display: flex;
+    justify-content: center; /* Centra el div horizontalmente */
+    align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
+  
+}
+
+
+
+.contenedor-2{
+  background-color: white;
+  
+}
+.contenedor-2 div p{
+  font-size: 70%;
+}
+
+/*loguitos raros*/
+.contenedor-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65%;
+  margin-left: 20%;
+}
+
+.card {
+  background-color: #d5dff1;
+  margin-bottom: 20px;
+  padding: 2px; /* Ajusta el espacio interno para hacerlo más compacto */
+}
+
+.loguitos-cards {
+  width: 19%; /* Ajusta el tamaño de las imágenes */
+  height: 16%; /* Asegúrate de que las imágenes sean cuadradas */
+}
+
+.card-info h3 {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto del título */
+}
+
+.card-info p {
+  font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+}
+
+.titulo-cards{
+  font-size: 60%;
+  margin-bottom: -7%;
+}
+
+
+.contenedor-5{
+  margin-top: 5%;
+}
+ 
+/*calculadoras*/
+.contenedor-6{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-info2 h3{
+  font-size: 140%;
+}
+
+.card2 img {
+  width: 70%;
+}
+
+.contenedor-7{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.titulo-contenedor-7{
+  font-size: 100%;
+  margin-left: -1%;
+}
+.parrafo-contenedor-7 pre { 
+  font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+    padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+    line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+    white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+    text-align: center;
+}
+
+.btn-contenedor-7{
+  transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+  margin-left: 13%;
+}
+
+.img-niños img{
+  margin-left: 3%;
+}
+
+.footer-izquierdo{
+  margin-top: 5%;
+  font-size: 50%;
+ 
+}
+.logosFC{
+  transform: scale(0.8);
+}
+  
+  }
+
+
+/*lasquerys del chat.. modfificadas*/
+/* Para pantallas de hasta 320px */
+@media (max-width: 320px) {
+  /* Ajusta los estilos según el diseño deseado para pantallas muy pequeñas */
+ 
+
+
+  
+}
+
+/* Para pantallas de hasta 480px */
+
+/* Para pantallas de hasta 720px */
+@media  (min-width: 481px) and (max-width: 720px) {
+ 
+}
+
+
+/* Para pantallas de hasta 960px */
+@media (max-width: 960px) {
+ 
+}
+
+/* Para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+ 
+}
+
+/* Para pantallas de 1326px en adelante */
+@media (min-width: 1326px) {
+  /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
 }
