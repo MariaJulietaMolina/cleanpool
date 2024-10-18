@@ -487,7 +487,7 @@ background-color: #001524;
 
 /* Media Query para pantallas pequeñas */
 
-@media (max-width: 430px) {
+@media (max-width: 730px) {
   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
   .checkbtn {
     display: block;
