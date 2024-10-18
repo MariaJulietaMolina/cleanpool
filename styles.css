@@ -701,11 +701,13 @@ background-color: #001524;
     padding: 8px 16px; /* Reduce el padding en dispositivos más pequeños */
   }
 }
-/* Para pantallas de hasta 768px */
-@media (max-width: 768px) {
-  
+/* Para pantallas de hasta 720px */
+@media (max-width: 720px) {
+  .button-CentradoV button {
+    font-size: 0.9rem; /* Reduce un poco el tamaño del texto */
+    padding: 8px 16px; /* Ajusta el padding */
+  }
 }
-
 /* Para pantallas de hasta 960px */
 @media (max-width: 960px) {
  
