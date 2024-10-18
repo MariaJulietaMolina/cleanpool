@@ -601,6 +601,14 @@ body {
   color:#52B69A;
 }
 
+.consideracionTitulo{
+  cursor: pointer;
+}
+.consideracionTitulo:hover{
+  color:#037971;
+}
+
+
 /*INICIO DE MEDIA QUERYS*/
 
 /* Media Query para pantallas pequeñas */

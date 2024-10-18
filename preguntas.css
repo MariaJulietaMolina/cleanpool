@@ -289,6 +289,14 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
   color:#52B69A;
 }
 
+.pregunta{
+  cursor: pointer;
+}
+
+.pregunta:hover{
+  color: #0c837b;
+}
+
 /*INICIO DE MEDIA QUERYS*/
 
 /* Media Query para pantallas pequeñas */
