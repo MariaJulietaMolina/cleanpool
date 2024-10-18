@@ -321,9 +321,10 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
     top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
     right: 0; /* Mover el menú al lado derecho */
     text-align: center;
-    display: flexbox;
-    z-index: 2; /* Coloca el menú por encima de la imagen */
+    display:flex;
     transition: all 0.5s ease; /* Animación suave */
+    z-index: 2; /* Coloca el menú por encima de la imagen */
+    flex-direction: column; /* Asegura que los li se alineen en columna */
 }
 
 /* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
@@ -335,6 +336,7 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
   /* Los enlaces en formato de bloque */
   nav ul li {
     margin: 20px 0;
+    flex-direction: column;
   }
 
   /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
@@ -345,7 +347,6 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
   .active{
     color: #c7e4f3;
   }
-
   /*ahi termina el bendito menu hamburguesa*/
  
   .div2-contenedor-1 {

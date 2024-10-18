@@ -311,47 +311,49 @@ button:hover {
 
 @media (max-width: 730px) {
     /* Mostrar el botón de hamburguesa en pantallas pequeñas */
-    .checkbtn {
-      display: block;
-      position: absolute;
-      right: 20px;
-     
-      color:#001524;
-    }
-  
-    /* Esconder el menú inicialmente (movido hacia arriba) */
-    nav ul {
-      position: absolute;
-      width: 50%;
-      height: auto;
-      background: #168AAD;
-      top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
-      right: 0; /* Mover el menú al lado derecho */
-      text-align: center;
-      display: flexbox;
-      transition: all 0.5s ease; /* Animación suave */
-      z-index: 2; /* Coloca el menú por encima de la imagen */
+  .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+   
+    color:#001524;
   }
-  
-  /* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
-  #check:checked ~ ul {
-    top: 80px; /* Menú visible, desplegándose desde arriba */
-    right: 0; /* Mantenerlo en el lado derecho */
+
+  /* Esconder el menú inicialmente (movido hacia arriba) */
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background: #168AAD;
+    top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+    right: 0; /* Mover el menú al lado derecho */
+    text-align: center;
+    display:flex;
+    transition: all 0.5s ease; /* Animación suave */
+    z-index: 2; /* Coloca el menú por encima de la imagen */
+    flex-direction: column; /* Asegura que los li se alineen en columna */
+}
+
+/* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
+#check:checked ~ ul {
+  top: 80px; /* Menú visible, desplegándose desde arriba */
+  right: 0; /* Mantenerlo en el lado derecho */
+}
+
+  /* Los enlaces en formato de bloque */
+  nav ul li {
+    margin: 20px 0;
+    flex-direction: column;
   }
-  
-    /* Los enlaces en formato de bloque */
-    nav ul li {
-      margin: 20px 0;
-    }
-  
-    /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
-    nav ul li a {
-      font-size: 20px;
-      color: #f2f3f2;
-    }
-    .active{
-      color: #c7e4f3;
-    }
+
+  /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+  nav ul li a {
+    font-size: 20px;
+    color: #f2f3f2;
+  }
+  .active{
+    color: #c7e4f3;
+  }
   
     /*ahi termina el bendito menu hamburguesa*/
    
