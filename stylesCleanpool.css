@@ -454,7 +454,8 @@ margin-bottom: 20px; /* Optional: Space below the header */
 max-width: 100%;
 height: auto; /* Maintain aspect ratio */
 margin-bottom: 10px; /* Optional: Space below the image */
-
+margin-left: 2em;
+ 
 }
 
 .texto-cabecera-div2-contenedor-d h1,
@@ -566,7 +567,7 @@ display: inline-flex;
 }
 
 .div1-contenedor-a h1{
-  font-size: 200%;
+  font-size: 250%;
 }
 
 .contenedor-d-span{
@@ -589,6 +590,13 @@ display: inline-flex;
   width: 80%;
   height: auto;
 }
+.texto-div1-contenedor-c p{
+  padding: 1em;
+}
+
+
+
+
 /*calculadoras*/
 .contenedor-6{
 
