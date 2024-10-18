@@ -575,10 +575,20 @@ display: inline-flex;
   justify-content: space-around;
 }
 
+
 .texto-contenedor-d p{
   margin-inline: 1em;
 }
+.div1-contenedor-c {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
+  align-items: center; /* Opcional: centra los elementos horizontalmente */
+}
 
+#bidones2 {
+  width: 80%;
+  height: auto;
+}
 /*calculadoras*/
 .contenedor-6{
 
