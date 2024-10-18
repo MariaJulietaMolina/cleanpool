@@ -479,6 +479,10 @@ background-color: #001524;
   color:#52B69A;
 }
 
+.button-CentradoV2{
+  display: none;
+}
+
 /*INICIO DE MEDIA QUERYS*/
 
 /* Media Query para pantallas pequeñas */
@@ -538,7 +542,7 @@ background-color: #001524;
    }
 
   .div1-contenedor-1 div img{
-    width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+    width: 90%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
     height: auto; /* Mantiene la proporción original de la imagen */
     object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
     margin-left: 10%;
@@ -549,6 +553,10 @@ background-color: #001524;
       max-height: 200px;  /* Ajusta este valor según tu diseño */
       overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
     
+  }
+  .div2-contenedor-1{
+  display: block;
+  align-items: center;
   }
 
   .div2-contenedor-1 h3 {
@@ -563,25 +571,17 @@ background-color: #001524;
    }
 
    .button-CentradoV  {
-    position: absolute; /* Posiciona el botón de forma absoluta */
-   
-    bottom: 0; /* Coloca el botón en la parte inferior del contenedor */
-    z-index: 10; /* Asegura que el botón quede delante de los otros elementos */
-    transform: translateY(-450%);
-   margin-left: -50%;
+   display: none;
 }
 
-.button-CentradoV button {
-  padding: 10px 20px;
-  font-size: 1rem; /* Usa unidades relativas para adaptar el tamaño */
-  background-color: #168AAD;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  width: 100%; /* Asegura que el botón ocupe todo el ancho del contenedor */
-  max-width: 300px; /* Establece un ancho máximo para evitar que se agrande demasiado */
-  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del botón */
+.button-CentradoV2{
+  display: flex;
+    justify-content: center; /* Centra el div horizontalmente */
+    align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
+  
 }
+
+
 
 .contenedor-2{
   background-color: white;
@@ -695,19 +695,13 @@ background-color: #001524;
 }
 
 /* Para pantallas de hasta 480px */
-@media  (min-width: 431px) and (max-width: 480px) {
-  .button-CentradoV button {
-    font-size: 0.875rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
-    padding: 8px 16px; /* Reduce el padding en dispositivos más pequeños */
-  }
-}
+
 /* Para pantallas de hasta 720px */
 @media  (min-width: 481px) and (max-width: 720px) {
-  .button-CentradoV button {
-    font-size: 0.9rem; /* Reduce un poco el tamaño del texto */
-    padding: 15px 16px; /* Ajusta el padding */
-  }
+ 
 }
+
+
 /* Para pantallas de hasta 960px */
 @media (max-width: 960px) {
  
