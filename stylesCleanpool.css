@@ -530,9 +530,10 @@ display: inline-flex;
     top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
     right: 0; /* Mover el menú al lado derecho */
     text-align: center;
-    display: flexbox;
+    display:block;
     transition: all 0.5s ease; /* Animación suave */
     z-index: 2; /* Coloca el menú por encima de la imagen */
+    flex-direction: column; /* Asegura que los li se alineen en columna */
 }
 
 /* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
