@@ -66,26 +66,9 @@ body {
     background-size: 99%;
   }
   
-  .contenedor-a {
-    background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
-    background-image: url("./asset/IMAGENES CLEANPOOL/fondo-3.jpg"); /* Corrige la ruta si es necesario */
-    background-size: cover; /* Asegura que la imagen cubra todo el div */
-    background-position: center; /* Centra la imagen dentro del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    min-height: 400px; /* Altura mínima para asegurar que la imagen se muestre adecuadamente */
-    display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    
-  }
+
   
-  .div1-contenedor-a {
-    color: white; /* Cambia el color del texto para mejorar contraste */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para hacerlo más legible sobre fondos claros */
-    padding: 20px; /* Espaciado interno para no pegar el texto a los bordes */
-    font-size: 2em; /* Ajusta el tamaño del texto según necesites */
-    text-align: center; /* Alinea el texto al centro */
-  }
+ 
   
   
   
@@ -108,28 +91,7 @@ body {
   
   
   
-  
-   .titulo-div1-contenedor-c{
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-   }
-  
-  .div1-contenedor-a {
-    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
-    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-    margin: 30px 0; /* Añade un espacio vertical entre las secciones */
-  }
-  
-  .contenedor-b > div {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .contenedor-b img {
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin: auto;
-  }
+
   
   
   button {
@@ -148,19 +110,7 @@ body {
   
   
   
-  
-    .button-CentradoV  {
-      display: flex;
-      justify-content: center; /* Centra el contenido horizontalmente */
-      align-items: center;     /* Centra el contenido verticalmente si es necesario */
-      height: 10%;    
-      margin-left: 17em;
-  }
-  
-  button:hover {
-    background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
-  }
-  
+
   .contenedor-2 {
     display: flex;
     gap: 20px; /* Espacio entre las cards */
@@ -184,29 +134,7 @@ body {
     padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
     margin-inline: 100px;
   }
-  .loguitos-cards {
-    width: 50px;
-    transform: translateX(210%);
-    margin-top: 20px;
-    
-  }
-  
-  
-  .card {
-    flex: 1 1 180px; /* Cada card puede crecer y encogerse pero base es 300px */
-    display: flexbox;
-    justify-content: center;
-    border-radius: 8px; /* Bordes redondeados */
-    overflow: hidden; /* Asegura que todo dentro de la card se quede dentro de los bordes redondeados */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
-    background-color: #f2f3f2; /* Fondo blanco para las cards */
-  
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    transition: transform 0.5s ease; 
-    will-change: transform; /* Optimiza las animaciones de escala */ 
-    
-  }
+
   
   .card:hover {
     transform: scale(1.05); /* Ajusta la escala si es necesario */
@@ -232,6 +160,25 @@ body {
     line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
   }
   
+  .loguitos-cards {
+    width: 50px;
+    margin-top: 20px;
+}
+
+.card {
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column; /* Para alinear los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f2f3f2;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  transition: transform 0.5s ease;  
+}
   .contenedor-1,
   .contenedor-2,
   .contenedor-3,
@@ -616,234 +563,234 @@ body {
 /* Media Query para pantallas pequeñas */
 
 @media (max-width: 730px) {
-   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
-   .checkbtn {
-    display: block;
-    position: absolute;
-    right: 20px;
-   
-    color:#001524;
-  }
+  /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  .checkbtn {
+   display: block;
+   position: absolute;
+   right: 20px;
+  
+   color:#001524;
+ }
 
-  /* Esconder el menú inicialmente (movido hacia arriba) */
-  nav ul {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    background: #168AAD;
-    top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
-    right: 0; /* Mover el menú al lado derecho */
-    text-align: center;
-    display:flex;
-    transition: all 0.5s ease; /* Animación suave */
-    z-index: 2; /* Coloca el menú por encima de la imagen */
-    flex-direction: column; /* Asegura que los li se alineen en columna */
+ /* Esconder el menú inicialmente (movido hacia arriba) */
+ nav ul {
+   position: absolute;
+   width: 50%;
+   height: auto;
+   background: #168AAD;
+   top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+   right: 0; /* Mover el menú al lado derecho */
+   text-align: center;
+   display:flex;
+   transition: all 0.5s ease; /* Animación suave */
+   z-index: 2; /* Coloca el menú por encima de la imagen */
+   flex-direction: column; /* Asegura que los li se alineen en columna */
 }
 
 /* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
 #check:checked ~ ul {
-  top: 80px; /* Menú visible, desplegándose desde arriba */
-  right: 0; /* Mantenerlo en el lado derecho */
+ top: 80px; /* Menú visible, desplegándose desde arriba */
+ right: 0; /* Mantenerlo en el lado derecho */
 }
 
-  /* Los enlaces en formato de bloque */
-  nav ul li {
-    margin: 20px 0;
-    flex-direction: column;
-  }
+ /* Los enlaces en formato de bloque */
+ nav ul li {
+   margin: 20px 0;
+   flex-direction: column;
+ }
 
-  /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
-  nav ul li a {
-    font-size: 20px;
-    color: #f2f3f2;
-  }
-  .active{
-    color: #c7e4f3;
-  }
+ /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+ nav ul li a {
+   font-size: 20px;
+   color: #f2f3f2;
+ }
+ .active{
+   color: #c7e4f3;
+ }
 
-  /*ahi termina el bendito menu hamburguesa*/
- 
-  .div2-contenedor-1 {
-    color: #f2f3f4;
-    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
-    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-    margin-top: 5%; 
-    
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-   }
+ /*ahi termina el bendito menu hamburguesa*/
 
-  .div1-contenedor-1 div img{
-    width: 90%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
-    margin-left: 10%;
-  }
-
-  .div1-contenedor-1 div{
-    margin-top: -2em;
-      max-height: 200px;  /* Ajusta este valor según tu diseño */
-      overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
-    
-  }
-  .div2-contenedor-1{
-  display: block;
-  align-items: center;
-  }
-
-  .div2-contenedor-1 h3 {
-   font-size: 120%;
+ .div2-contenedor-1 {
+   color: #f2f3f4;
+   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+   display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+   margin-top: 5%; 
    
+   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
   }
-  .div2-contenedor-1 h2 {
-    display: none;
-   }
-   .div2-contenedor-1 p {
-    font-size: 65%;
-   }
 
-   .button-CentradoV  {
+ .div1-contenedor-1 div img{
+   width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+   height: auto; /* Mantiene la proporción original de la imagen */
+   object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
+   margin-left: 10%;
+ }
+
+ .div1-contenedor-1 div{
+   margin-top: -2em;
+     max-height: 200px;  /* Ajusta este valor según tu diseño */
+     overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
+   
+ }
+ .div2-contenedor-1{
+ display: block;
+ align-items: center;
+ }
+
+ .div2-contenedor-1 h3 {
+  font-size: 100%;
+  
+ }
+ .div2-contenedor-1 h2 {
    display: none;
+  }
+  .div2-contenedor-1 p {
+   font-size: 65%;
+  }
+
+  .button-CentradoV  {
+  display: none;
 }
 
 .button-CentradoV2{
-  display: flex;
-    justify-content: center; /* Centra el div horizontalmente */
-    align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
-  
+ display: flex;
+   justify-content: center; /* Centra el div horizontalmente */
+   align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
+ 
 }
 
 
 
 .contenedor-2{
-  background-color: white;
-  
+ background-color: white;
+ 
 }
 .contenedor-2 div p{
-  font-size: 70%;
+ font-size: 70%;
 }
 
 /*loguitos raros*/
 .contenedor-3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 65%;
-  margin-left: 20%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ width: 65%;
+ margin-left: 20%;
 }
 
 .card {
-  background-color: #d5dff1;
-  margin-bottom: 20px;
-  padding: 2px; /* Ajusta el espacio interno para hacerlo más compacto */
+ background-color: #d5dff1;
+ margin-bottom: 20px;
+ padding: 2px; /* Ajusta el espacio interno para hacerlo más compacto */
 }
 
 .loguitos-cards {
-  width: 19%; /* Ajusta el tamaño de las imágenes */
-  height: 16%; /* Asegúrate de que las imágenes sean cuadradas */
+ width: 19%; /* Ajusta el tamaño de las imágenes */
+ height: 16%; /* Asegúrate de que las imágenes sean cuadradas */
 }
 
 .card-info h3 {
-  font-size: 1.2rem; /* Ajusta el tamaño del texto del título */
+ font-size: 1.2rem; /* Ajusta el tamaño del texto del título */
 }
 
 .card-info p {
-  font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+ font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
 }
 
 .titulo-cards{
-  font-size: 60%;
-  margin-bottom: -7%;
+ font-size: 60%;
+ margin-bottom: -7%;
 }
 
 
 .contenedor-5{
-  margin-top: 5%;
+ margin-top: 5%;
 }
- 
+
 /*calculadoras*/
 .contenedor-6{
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
 }
 
 .card-info2 h3{
-  font-size: 140%;
+ font-size: 140%;
 }
 
 .card2 img {
-  width: 70%;
+ width: 70%;
 }
 
 .contenedor-7{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:center;
 }
 
 .titulo-contenedor-7{
-  font-size: 100%;
-  margin-left: -1%;
+ font-size: 100%;
+ margin-left: -1%;
 }
 .parrafo-contenedor-7 pre { 
-  font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
-    padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
-    line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
-    white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
-    text-align: center;
+ font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+   padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+   line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+   white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+   text-align: center;
 }
 
 .btn-contenedor-7{
-  transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
-  margin-left: 13%;
+ transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+ margin-left: 13%;
 }
 
 .img-niños img{
-  margin-left: 3%;
+ margin-left: 3%;
 }
 
 .footer-izquierdo{
-  margin-top: 5%;
-  font-size: 50%;
- 
+ margin-top: 5%;
+ font-size: 50%;
+
 }
 .logosFC{
-  transform: scale(0.8);
+ transform: scale(0.8);
 }
-  
-  }
+ 
+ }
 
 
 /*lasquerys del chat.. modfificadas*/
 /* Para pantallas de hasta 320px */
 @media (max-width: 320px) {
-  /* Ajusta los estilos según el diseño deseado para pantallas muy pequeñas */
+ /* Ajusta los estilos según el diseño deseado para pantallas muy pequeñas */
+
+
+
  
-
-
-  
 }
 
 /* Para pantallas de hasta 480px */
 
 /* Para pantallas de hasta 720px */
 @media  (min-width: 481px) and (max-width: 720px) {
- 
+
 }
 
 
 /* Para pantallas de hasta 960px */
 @media (max-width: 960px) {
- 
+
 }
 
 /* Para pantallas de hasta 1024px */
 @media (max-width: 1024px) {
- 
+
 }
 
 /* Para pantallas de 1326px en adelante */
 @media (min-width: 1326px) {
-  /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
+ /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
 }
