@@ -479,27 +479,9 @@ margin-left: 11%;
   align-items: center;
   }
 
-  .div2-contenedor-1 h3 {
-   font-size: 120%;
-   
-  }
-  .div2-contenedor-1 h2 {
-    display: none;
-   }
-   .div2-contenedor-1 p {
-    font-size: 65%;
-   }
 
-   .button-CentradoV  {
-   display: none;
-}
 
-.button-CentradoV2{
-  display: flex;
-    justify-content: center; /* Centra el div horizontalmente */
-    align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
-  
-}
+
 
 
 

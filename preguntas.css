@@ -348,103 +348,31 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
     color: #c7e4f3;
   }
   /*ahi termina el bendito menu hamburguesa*/
- 
-  .div2-contenedor-1 {
-    color: #f2f3f4;
-    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
-    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-    margin-top: 5%; 
-    
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-   }
-
-  .div1-contenedor-1 div img{
-    width: 90%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
-    margin-left: 10%;
+  .div1-contenedor-a {
+    font-size: 80%;
   }
 
-  .div1-contenedor-1 div{
-    margin-top: -2em;
-      max-height: 200px;  /* Ajusta este valor según tu diseño */
-      overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
-    
+  .listado2{
+    text-align: center;
   }
-  .div2-contenedor-1{
-  display: block;
-  align-items: center;
-  }
-
-  .div2-contenedor-1 h3 {
-   font-size: 120%;
-   
-  }
-  .div2-contenedor-1 h2 {
-    display: none;
-   }
-   .div2-contenedor-1 p {
-    font-size: 65%;
-   }
-
-   .button-CentradoV  {
-   display: none;
+  .listado-preguntas {
+    width: 80%; /* Ajusta el porcentaje según lo necesites */
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Esto alineará el texto en el centro */
 }
 
-.button-CentradoV2{
-  display: flex;
-    justify-content: center; /* Centra el div horizontalmente */
-    align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
-  
+.preguntas-listado-preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
-.contenedor-2{
-  background-color: white;
-  
-}
-.contenedor-2 div p{
-  font-size: 70%;
-}
-
-/*loguitos raros*/
-.contenedor-3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 65%;
-  margin-left: 20%;
-}
-
-.card {
-  background-color: #d5dff1;
-  margin-bottom: 20px;
-  padding: 2px; /* Ajusta el espacio interno para hacerlo más compacto */
-}
-
-.loguitos-cards {
-  width: 19%; /* Ajusta el tamaño de las imágenes */
-  height: 16%; /* Asegúrate de que las imágenes sean cuadradas */
-}
-
-.card-info h3 {
-  font-size: 1.2rem; /* Ajusta el tamaño del texto del título */
-}
-
-.card-info p {
-  font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
-}
-
-.titulo-cards{
-  font-size: 60%;
-  margin-bottom: -7%;
-}
 
 
-.contenedor-5{
-  margin-top: 5%;
-}
+
+
  
 /*calculadoras*/
 .contenedor-6{
