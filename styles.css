@@ -545,7 +545,7 @@ background-color: #001524;
    }
 
   .div1-contenedor-1 div img{
-    width: 90%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+    width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
     height: auto; /* Mantiene la proporción original de la imagen */
     object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
     margin-left: 10%;
@@ -563,7 +563,7 @@ background-color: #001524;
   }
 
   .div2-contenedor-1 h3 {
-   font-size: 120%;
+   font-size: 100%;
    
   }
   .div2-contenedor-1 h2 {
