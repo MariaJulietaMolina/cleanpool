@@ -356,7 +356,7 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
     text-align: center;
   }
   .listado-preguntas {
-    width: 80%; /* Ajusta el porcentaje según lo necesites */
+    width: 100%; /* Ajusta el porcentaje según lo necesites */
     margin: 0 auto; /* Centra horizontalmente */
     text-align: center; /* Esto alineará el texto en el centro */
 }
