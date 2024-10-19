@@ -555,6 +555,16 @@ body {
   color:#037971;
 }
 
+.cal11{
+  font-size: 4em;
+  text-align: center;
+}
+
+.subCal11{
+  font-size: 2em;
+  text-align: center;
+}
+
 
 /*INICIO DE MEDIA QUERYS*/
 
@@ -758,8 +768,23 @@ body {
 .logosFC{
  transform: scale(0.8);
 }
+
+.contenedor-4{
+  display: none;
+}
+
+#contenedoresDeCalculadoras{
+  display: none;
+}
+
+ .contenedor-calculadoras{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
  
  }
+
+ 
 
 
 /*lasquerys del chat.. modfificadas*/
@@ -793,4 +818,5 @@ body {
 /* Para pantallas de 1326px en adelante */
 @media (min-width: 1326px) {
  /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
+}
 }
