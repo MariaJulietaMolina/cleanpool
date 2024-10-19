@@ -301,6 +301,7 @@ margin-left: 11%;
 
 .listado-clientes ul li {
   margin-bottom: 10px;
+  color:#001524;
 }
 
 /* Estilos para la galería de imágenes */
@@ -390,9 +391,14 @@ margin-left: 11%;
 .active{
   color:#52B69A;
 }
+.checkbtn{
+  display: none;
+}
 
-/*carrousel*/
 
+.img2{
+  display: none;
+}
 
 /*INICIO DE MEDIA QUERYS*/
 
@@ -405,7 +411,7 @@ margin-left: 11%;
     display: block;
     position: absolute;
     right: 20px;
-   
+    transform: scale(1.5);
     color:#001524;
   }
 
@@ -505,44 +511,30 @@ margin-left: 11%;
   font-size: 70%;
 }
 
-/*loguitos raros*/
-.contenedor-3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 65%;
-  margin-left: 20%;
+.div1-contenedor-a {
+  font-size: 90%;
 }
 
-.card {
-  background-color: #d5dff1;
-  margin-bottom: 20px;
-  padding: 2px; /* Ajusta el espacio interno para hacerlo más compacto */
+.titulo-div1-contenedor-c{
+  text-align: center;
 }
 
-.loguitos-cards {
-  width: 19%; /* Ajusta el tamaño de las imágenes */
-  height: 16%; /* Asegúrate de que las imágenes sean cuadradas */
+.texto-div1-contenedor-c{
+  padding: 1em;
 }
 
-.card-info h3 {
-  font-size: 1.2rem; /* Ajusta el tamaño del texto del título */
+.algClientes{
+  text-align: center;
 }
 
-.card-info p {
-  font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+.img2{
+  display: block;
 }
 
-.titulo-cards{
-  font-size: 60%;
-  margin-bottom: -7%;
+.listado-clientes ul li{
+  text-align: center;
 }
 
-
-.contenedor-5{
-  margin-top: 5%;
-}
- 
 /*calculadoras*/
 .contenedor-6{
 

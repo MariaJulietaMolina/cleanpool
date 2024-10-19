@@ -367,6 +367,9 @@ justify-content: center; /* Centra las cards en la fila */
 .active{
   color:#52B69A;
 }
+.checkbtn{
+  display: none;
+}
 
 /*INICIO DE MEDIA QUERYS*/
 
