@@ -569,7 +569,7 @@ body {
 }
 
 
-.calculadoraMantenimiento2{
+#contenedoresDeCalculadoras2{
   display: none;
 }
 
@@ -577,7 +577,9 @@ body {
 
 /* Media Query para pantallas pequeñas */
 
-/* Media Query para pantallas pequeñas */
+/* HAGO ESPACIO PARA QUE 
+SEA MAS FACIL ENCONTRARLO POR LA MINIATURA DE 
+LA DERECHA */
 
 @media (max-width: 730px) {
   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
@@ -780,20 +782,99 @@ body {
   display: none;
 }
 
-#contenedoresDeCalculadoras{
-  display: none;
+/*ACA EMPIEZAN CALCULADORAS 2"
+
+/* Estilo para el contenedor principal de las calculadoras */
+#contenedoresDeCalculadoras2{
+  display: flex;
+  flex-direction: column; /* Alinea las calculadoras una encima de otra */
+  justify-content: center;
+  align-items: center; /* Centra los elementos en el eje horizontal */
+  padding: 20px;
+  gap: 30px; /* Espacio entre cada calculadora */
 }
 
- .contenedor-calculadoras{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
- 
- }
+.contenedor-calculadoras {
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Asegura que las calculadoras estén una debajo de otra */
+  align-items: center; /* Centra horizontalmente las calculadoras */
+  gap: 30px; /* Espacio entre cada calculadora */
+  width: 100%; /* Hacer que ocupen todo el ancho disponible */
+  padding: 20px; /* Espaciado interno */
+}
 
- .contenedor-calculadoras{
-  display: none;
- }
+
+
+.contenedor-calculadoras > div {
+  width: 100%; /* Ancho completo */
+  max-width: 400px; /* Ancho máximo para evitar que se extienda demasiado en pantallas grandes */
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #0b0224;
+}
+
+.contenedor-calculadoras h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contenedor-calculadoras form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+}
+
+.contenedor-calculadoras input,
+.contenedor-calculadoras select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contenedor-calculadoras button {
+  padding: 10px 20px;
+  background-color: #168AAD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.contenedor-calculadoras .result {
+  margin-top: 20px;
+  background: #e0f7fa;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+/* Estilo de texto para resultados */
+.contenedor-calculadoras .result h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contenedor-calculadoras .result p {
+  font-size: 16px;
+  color: #00796b;
+}
+
+
+
+#contenedoresDeCalculadoras {
+  display: none !important;
+}
+
+
 
 .div1-contenedor-1a .div2-contenedor-1 .cal11 {
   font-size: 2em;

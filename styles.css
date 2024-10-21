@@ -186,15 +186,13 @@ button:hover {
 
 .contenedor-2 {
   display: flex;
-  gap: 20px; /* Espacio entre las cards */
-  justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
   padding: 20px; 
   margin-inline: 20%;
   font-size: 30px;
   text-align: center;
   color: #037971;
   opacity: 80%;
-
+margin-top: 1em;
 
 }
 
@@ -255,7 +253,7 @@ button:hover {
 }
 
 
-.contenedor-2,
+
 .contenedor-3,
 .contenedor-a,
 .contenedor-b,
@@ -590,6 +588,8 @@ background-color: #001524;
 
 .contenedor-2{
   background-color: white;
+  margin-inline: 0%;
+  
   
 }
 .contenedor-2 div p{

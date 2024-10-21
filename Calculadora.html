@@ -200,81 +200,122 @@
 
         </div>
 
+    </section>
 
-        <!-- Calculadora Mantenimiento 2 -->
-        <div class="calculadoraMantenimiento2">
-            <h1>Calculadora de Mantenimiento de Agua</h1>
-            <form id="calcFormMantenimiento">
-                <label for="tipoAguaMantenimiento">Selecciona el tipo de agua:</label>
-                <select id="tipoAguaMantenimiento">
-                    <option value="aguaRed">Agua de Red (Potable)</option>
-                    <option value="aguaPozo1">Agua de Pozo 1</option>
-                    <option value="aguaPozo2">Agua de Pozo 2</option>
-                </select>
 
-                <label for="volumenMantenimiento">Volumen de la pileta (en m³):</label>
-                <select id="volumenMantenimiento">
-                    <option value="5">5 m³</option>
-                    <option value="10">10 m³</option>
-                    <option value="20">20 m³</option>
-                    <option value="30">30 m³</option>
-                    <option value="40">40 m³</option>
-                    <option value="50">50 m³</option>
-                    <option value="60">60 m³</option>
-                    <option value="70">70 m³</option>
-                    <option value="80">80 m³</option>
-                    <option value="90">90 m³</option>
-                    <option value="100">100 m³</option>
-                </select>
+    <!-- Calculadoras de químicos  2 -->
+    <section id="contenedoresDeCalculadoras2">
+        <div class="contenedor-calculadoras">
+            <!-- Calculadora Arranque -->
+            <div class="calculadoraArranque">
+                <h1>Calculadora de Arranque de Agua</h1>
+                <form id="calcFormArranque">
+                    <label for="tipoAguaArranque">Selecciona el tipo de agua:</label>
+                    <select id="tipoAguaArranque">
+                        <option value="aguaRed">Agua de Red (Potable)</option>
+                        <option value="aguaPozo1">Agua de Pozo 1</option>
+                        <option value="aguaPozo2">Agua de Pozo 2</option>
+                    </select>
 
-                <button type="button" onclick="calcularMantenimiento()">Calcular</button>
-            </form>
+                    <label for="volumenArranque">Volumen de la pileta (en m³):</label>
+                    <select id="volumenArranque">
+                        <option value="5">5 m³</option>
+                        <option value="10">10 m³</option>
+                        <option value="20">20 m³</option>
+                        <option value="30">30 m³</option>
+                        <option value="40">40 m³</option>
+                        <option value="50">50 m³</option>
+                        <option value="60">60 m³</option>
+                        <option value="70">70 m³</option>
+                        <option value="80">80 m³</option>
+                        <option value="90">90 m³</option>
+                        <option value="100">100 m³</option>
+                    </select>
 
-            <div class="result">
-                <h2>Resultados</h2>
-                <p id="resultadoMantenimiento"></p>
+
+                    <button type="button" onclick="calcularArranque()">Calcular</button>
+                </form>
+
+                <div class="result">
+                    <h2>Resultados</h2>
+                    <p id="resultadoArranque"></p>
+                </div>
             </div>
-        </div>
 
-        <!-- Calculadora Recuperación -->
-        <div class="calculadoraRecuperacion">
-            <h1>Calculadora de Recuperación de Agua</h1>
-            <form id="calcFormRecuperacion">
-                <label for="tipoAguaRecuperacion">Selecciona el tipo de agua:</label>
-                <select id="tipoAguaRecuperacion">
-                    <option value="aguaRed">Agua poco turbia</option>
-                    <option value="aguaPozo1">Agua turbia</option>
-                    <option value="aguaPozo2">Agua muy turbia</option>
-                </select>
+            <!-- Calculadora Mantenimiento -->
+            <div class="calculadoraMantenimiento">
+                <h1>Calculadora de Mantenimiento de Agua</h1>
+                <form id="calcFormMantenimiento">
+                    <label for="tipoAguaMantenimiento">Selecciona el tipo de agua:</label>
+                    <select id="tipoAguaMantenimiento">
+                        <option value="aguaRed">Agua de Red (Potable)</option>
+                        <option value="aguaPozo1">Agua de Pozo 1</option>
+                        <option value="aguaPozo2">Agua de Pozo 2</option>
+                    </select>
 
-                <label for="volumenRecuperacion">Volumen de la pileta (en m³):</label>
-                <select id="volumenRecuperacion">
-                    <option value="5">5 m³</option>
-                    <option value="10">10 m³</option>
-                    <option value="20">20 m³</option>
-                    <option value="30">30 m³</option>
-                    <option value="40">40 m³</option>
-                    <option value="50">50 m³</option>
-                    <option value="60">60 m³</option>
-                    <option value="70">70 m³</option>
-                    <option value="80">80 m³</option>
-                    <option value="90">90 m³</option>
-                    <option value="100">100 m³</option>
-                </select>
+                    <label for="volumenMantenimiento">Volumen de la pileta (en m³):</label>
+                    <select id="volumenMantenimiento">
+                        <option value="5">5 m³</option>
+                        <option value="10">10 m³</option>
+                        <option value="20">20 m³</option>
+                        <option value="30">30 m³</option>
+                        <option value="40">40 m³</option>
+                        <option value="50">50 m³</option>
+                        <option value="60">60 m³</option>
+                        <option value="70">70 m³</option>
+                        <option value="80">80 m³</option>
+                        <option value="90">90 m³</option>
+                        <option value="100">100 m³</option>
+                    </select>
 
-                <button type="button" onclick="calcularRecuperacion()">Calcular</button>
-            </form>
+                    <button type="button" onclick="calcularMantenimiento()">Calcular</button>
+                </form>
 
-            <div class="result">
-                <h2>Resultados</h2>
-                <p id="resultadoRecuperacion"></p>
+                <div class="result">
+                    <h2>Resultados</h2>
+                    <p id="resultadoMantenimiento"></p>
+                </div>
             </div>
-        </div>
+
+            <!-- Calculadora Recuperación -->
+            <div class="calculadoraRecuperacion">
+                <h1>Calculadora de Recuperación de Agua</h1>
+                <form id="calcFormRecuperacion">
+                    <label for="tipoAguaRecuperacion">Selecciona el tipo de agua:</label>
+                    <select id="tipoAguaRecuperacion">
+                        <option value="aguaRed">Agua poco turbia</option>
+                        <option value="aguaPozo1">Agua turbia</option>
+                        <option value="aguaPozo2">Agua muy turbia</option>
+                    </select>
+
+                    <label for="volumenRecuperacion">Volumen de la pileta (en m³):</label>
+                    <select id="volumenRecuperacion">
+                        <option value="5">5 m³</option>
+                        <option value="10">10 m³</option>
+                        <option value="20">20 m³</option>
+                        <option value="30">30 m³</option>
+                        <option value="40">40 m³</option>
+                        <option value="50">50 m³</option>
+                        <option value="60">60 m³</option>
+                        <option value="70">70 m³</option>
+                        <option value="80">80 m³</option>
+                        <option value="90">90 m³</option>
+                        <option value="100">100 m³</option>
+                    </select>
+
+                    <button type="button" onclick="calcularRecuperacion()">Calcular</button>
+                </form>
+
+                <div class="result">
+                    <h2>Resultados</h2>
+                    <p id="resultadoRecuperacion"></p>
+                </div>
+            </div>
         </div>
 
     </section>
 
-    </section>
+
     <!-- Aca comienzan las consideraciones -->
     <!--consideraciones calculadora de arranque-->
     <h2 class="titulo-consideraciones">CONSIDERACIONES</h2>
