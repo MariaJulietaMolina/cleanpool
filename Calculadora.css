@@ -746,6 +746,7 @@ LA DERECHA */
  display: flex;
  flex-wrap: wrap;
  justify-content:center;
+ margin-left: -1em;
 }
 
 .titulo-contenedor-7{
