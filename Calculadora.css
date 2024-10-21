@@ -404,11 +404,11 @@ body {
   }
   
   .cal11{
-    font-size: 50px;
+    
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 5%;
+    margin-left: 3%;
   }
 
   .subCal11{
@@ -564,7 +564,14 @@ body {
   font-size: 2em;
   text-align: center;
 }
+.subCal112{
+  font-size: 1.5em 
+}
 
+
+.calculadoraMantenimiento2{
+  display: none;
+}
 
 /*INICIO DE MEDIA QUERYS*/
 
@@ -784,39 +791,33 @@ body {
  
  }
 
+ .contenedor-calculadoras{
+  display: none;
+ }
+
+.div1-contenedor-1a .div2-contenedor-1 .cal11 {
+  font-size: 2em;
+  margin-top: -1em;
+}
+.div1-contenedor-1a .div2-contenedor-1 .subCal11{
+  font-size: 1em;
+ color:#5ab3df;
+}
+
+
+.contenedor-5{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin-left: 9%;
+}
+
+.contenedor-5 .titulo-cards h2{
+  font-size: 1.3em;
+  display: block;
+  margin-top: -8px;
+  opacity: 150%;
+}
  
 
-
-/*lasquerys del chat.. modfificadas*/
-/* Para pantallas de hasta 320px */
-@media (max-width: 320px) {
- /* Ajusta los estilos según el diseño deseado para pantallas muy pequeñas */
-
-
-
- 
-}
-
-/* Para pantallas de hasta 480px */
-
-/* Para pantallas de hasta 720px */
-@media  (min-width: 481px) and (max-width: 720px) {
-
-}
-
-
-/* Para pantallas de hasta 960px */
-@media (max-width: 960px) {
-
-}
-
-/* Para pantallas de hasta 1024px */
-@media (max-width: 1024px) {
-
-}
-
-/* Para pantallas de 1326px en adelante */
-@media (min-width: 1326px) {
- /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
-}
 }

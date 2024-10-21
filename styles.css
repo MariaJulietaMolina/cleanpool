@@ -563,11 +563,12 @@ background-color: #001524;
   }
 
   .div2-contenedor-1 h3 {
-   font-size: 100%;
+    display: none;
    
   }
   .div2-contenedor-1 h2 {
-    display: none;
+
+    font-size: 130%;
    }
    .div2-contenedor-1 p {
     font-size: 65%;
