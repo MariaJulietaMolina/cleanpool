@@ -118,10 +118,11 @@ nav ul li a:hover {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
  }
  .div2-contenedor-1 h3{
-  font-size: 3rem;
+  
+  font-size: 2rem;
  }
  .div2-contenedor-1 h2{
-  font-size: 2rem;
+  font-size: 3rem;
  }
 
  .div2-contenedor-1 p{
@@ -563,15 +564,15 @@ background-color: #001524;
   }
 
   .div2-contenedor-1 h3 {
-    display: none;
    
+    font-size: 85%;
   }
   .div2-contenedor-1 h2 {
 
-    font-size: 130%;
+    font-size: 150%;
    }
    .div2-contenedor-1 p {
-    font-size: 65%;
+    display: none;
    }
 
    .button-CentradoV  {
