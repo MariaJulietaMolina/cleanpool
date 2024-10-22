@@ -904,5 +904,9 @@ LA DERECHA */
 .consideracionesTOTAL{
   margin-inline: 2em;
 } 
+.contenedor-3{
+  width: 55%; 
+  margin: 0 auto;
+}
 
 }
