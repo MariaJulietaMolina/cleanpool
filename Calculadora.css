@@ -900,6 +900,9 @@ LA DERECHA */
   margin-top: -8px;
   opacity: 150%;
 }
- 
+
+.consideracionesTOTAL{
+  margin-inline: 2em;
+} 
 
 }
