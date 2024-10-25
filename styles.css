@@ -543,11 +543,12 @@ DESPUES*/
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
    }
 
-  .div1-contenedor-1 div img{
+  .div1-contenedor-1 img{
     width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
     height: auto; /* Mantiene la proporción original de la imagen */
     object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
     margin-left: 10%;
+    margin-top: 3em;
   }
 
 .div2-contenedor-1{
@@ -555,11 +556,11 @@ DESPUES*/
 }
 
   .div1-contenedor-1 div{
-    margin-top: 0em;
-      max-height: 20em;  /* Ajusta este valor según tu diseño */
+    margin-top: -3em;
+    max-height: 20em;  /* Ajusta este valor según tu diseño */
      
-    
   }
+
   .div2-contenedor-1{
   display: block;
   align-items: center;
