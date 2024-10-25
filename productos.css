@@ -367,8 +367,17 @@ justify-content: center; /* Centra las cards en la fila */
 /* Media Query para pantallas pequeñas */
 
 @media (max-width: 730px) {
+  #check{
+    display: none;
+  }
  /* Mostrar el botón de hamburguesa en pantallas pequeñas */
-
+ .checkbtn {
+  display: block;
+  position: absolute;
+  right: 20px;
+  color:#001524;
+ 
+}
 
 
 
