@@ -470,9 +470,7 @@ background-color: #001524;
   margin-top: 1em;
 }
 
-/*INICIO DE MEDIA QUERYS*/
 
-/* Media Query para pantallas pequeñas */
 nav ul li {
   margin-right: 23px; /* Espacio entre los ítems */
 }
@@ -608,7 +606,7 @@ DESPUES*/
   flex-wrap: wrap;
   justify-content: space-around;
   width: 65%;
-  margin-left: 20%;
+  margin-left: 12%;
 }
 
 .card {
