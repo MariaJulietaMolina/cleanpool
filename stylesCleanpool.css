@@ -543,7 +543,7 @@ display: inline-flex;
     text-align: center;
     display:flex;
     transition: all 0.5s ease; /* Animación suave */
-    z-index: 2; /* Coloca el menú por encima de la imagen */
+    z-index: 10; /* Coloca el menú por encima de la imagen */
     flex-direction: column; /* Asegura que los li se alineen en columna */
 }
 
@@ -666,36 +666,3 @@ display: inline-flex;
   
   }
 
-
-/*lasquerys del chat.. modfificadas*/
-/* Para pantallas de hasta 320px */
-@media (max-width: 320px) {
-  /* Ajusta los estilos según el diseño deseado para pantallas muy pequeñas */
- 
-
-
-  
-}
-
-/* Para pantallas de hasta 480px */
-
-/* Para pantallas de hasta 720px */
-@media  (min-width: 481px) and (max-width: 720px) {
- 
-}
-
-
-/* Para pantallas de hasta 960px */
-@media (max-width: 960px) {
- 
-}
-
-/* Para pantallas de hasta 1024px */
-@media (max-width: 1024px) {
- 
-}
-
-/* Para pantallas de 1326px en adelante */
-@media (min-width: 1326px) {
-  /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
-}
