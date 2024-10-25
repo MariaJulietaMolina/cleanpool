@@ -494,7 +494,7 @@ margin-left: 11%;
 }
 
 .div1-contenedor-a {
-  font-size: 90%;
+  font-size: 60%;
 }
 
 .titulo-div1-contenedor-c{
@@ -568,39 +568,19 @@ margin-left: 11%;
 .logosFC{
   transform: scale(0.8);
 }
+
+.div1-contenedor-a{
+  height: 26em;
+  width: auto;
+  margin-top: 3.5em;
+  margin-bottom: 0px;
+}
+
+.logoF{
+  margin-top: -9em;
+}
+
+
   
   }
 
-
-/*lasquerys del chat.. modfificadas*/
-/* Para pantallas de hasta 320px */
-@media (max-width: 320px) {
-  /* Ajusta los estilos según el diseño deseado para pantallas muy pequeñas */
- 
-
-
-  
-}
-
-/* Para pantallas de hasta 480px */
-
-/* Para pantallas de hasta 720px */
-@media  (min-width: 481px) and (max-width: 720px) {
- 
-}
-
-
-/* Para pantallas de hasta 960px */
-@media (max-width: 960px) {
- 
-}
-
-/* Para pantallas de hasta 1024px */
-@media (max-width: 1024px) {
- 
-}
-
-/* Para pantallas de 1326px en adelante */
-@media (min-width: 1326px) {
-  /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
-}
