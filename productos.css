@@ -368,13 +368,7 @@ justify-content: center; /* Centra las cards en la fila */
 
 @media (max-width: 730px) {
  /* Mostrar el botón de hamburguesa en pantallas pequeñas */
- .checkbtn {
-  display: block;
-  position: absolute;
-  right: 20px;
-  color:#001524;
- 
-}
+
 
 
 
