@@ -496,6 +496,12 @@ nav ul {
   display: flex;
   justify-content: center; /* Ajusta según sea necesario */
 }
+
+/*ACA EMPIEZAN LAS MEDIAQUERYS
+VOY A ESCRIBIR MUCHO
+PARA QUE SE ENCUENTRE MAS FACIL 
+DESPUES*/
+
 @media (max-width: 730px) {
    /* Mostrar el botón de hamburguesa en pantallas pequeñas */
    .checkbtn {

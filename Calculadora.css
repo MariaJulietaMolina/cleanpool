@@ -63,7 +63,8 @@ body {
     background-size: cover; /* Asegura que la imagen cubra todo el div */
     background-position: center; /* Centra la imagen dentro del div */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: 99%;
+    background-size: 100%;
+    width: 100%;
   }
   
 
@@ -75,7 +76,7 @@ body {
   .div1-contenedor-1a{
     width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
     display: flex; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-    margin: 20px 0; /* Añade un espacio vertical entre las secciones */
+    margin-top: 1em;
     font-family: "Noto Sans JP", sans-serif;
     text-shadow: 2px 2px 4px #001524;
   }
@@ -83,9 +84,7 @@ body {
     color: #f2f3f4;
     width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
     display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-    margin-top: 5%; 
-    margin-left: 5%;
-    margin-right: 10%;
+
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
    }
   
@@ -514,11 +513,7 @@ body {
   
 }
 
-/* Ajustes para el resto del diseño */
-.contenedor-1a, .contenedor-2, .contenedor-3, .contenedor-7 {
-  margin: 20px;
-  padding: 10px;
-}
+
 
 .consideracionesTOTAL{
     background-color:#a5d2e9;
@@ -641,7 +636,7 @@ LA DERECHA */
  .div1-contenedor-1 div{
    margin-top: -2em;
      max-height: 200px;  /* Ajusta este valor según tu diseño */
-     overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
+     
    
  }
  .div2-contenedor-1{
