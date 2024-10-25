@@ -551,9 +551,9 @@ background-color: #001524;
   }
 
   .div1-contenedor-1 div{
-    margin-top: -2em;
-      max-height: 200px;  /* Ajusta este valor según tu diseño */
-      overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
+    margin-top: 0em;
+      max-height: 20em;  /* Ajusta este valor según tu diseño */
+     
     
   }
   .div2-contenedor-1{
