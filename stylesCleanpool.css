@@ -487,15 +487,7 @@ display: inline-flex;
 }
 
 
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
+
 #check{
   display: none;
 }
@@ -503,6 +495,9 @@ display: inline-flex;
 
 .active{
   color:#52B69A;
+}
+.checkbtn{
+  display: none;
 }
 
 /*INICIO DE MEDIA QUERYS*/

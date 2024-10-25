@@ -1,12 +1,4 @@
 /* Establece el color de fondo de todo el cuerpo de la página a blanco */
-*{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
 body {
   background-color: white;
   margin: 0; /* Elimina el margen por defecto */
@@ -18,7 +10,7 @@ body {
   width: 100%;
   background-color: white; /* Un ligero gris para distinguir la barra de navegación */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
-  padding: 1rem 0; /* Espacio superior e inferior dentro del div */
+  padding: 10px 0; /* Espacio superior e inferior dentro del div */
 }
 
 nav {
@@ -33,26 +25,22 @@ nav {
 
 /* Estilo del logo */
 nav img {
-  height: 3rem; /* Altura del logo */
-  margin-right: -5em; /* Espacio a la derecha del logo */
-  margin-left: 2em;
+  height: 55px; /* Altura del logo */
+  margin-right: -5px; /* Espacio a la derecha del logo */
+  margin-left: 10px;
 }
 
-.contenedor-nav {
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Ajusta según sea necesario */
 }
 
-.contenedor-nav nav ul {
- list-style-type: none;
- margin-left: 35em;
-}
-
-.contenedor-nav nav ul li {
-  display: inline;
-  margin-left: 2em; 
-  
+/* Estilo de los items de la lista */
+nav ul li {
+  margin-right: 23px; /* Espacio entre los ítems */
 }
 
 
@@ -67,6 +55,22 @@ nav ul li a {
 /* Añade un efecto al pasar el ratón sobre los enlaces */
 nav ul li a:hover {
   color: #5ab3df; /* Cambia el color al pasar el ratón */
+}
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-nav nav ul {
+ list-style-type: none;
+ margin-left: 450px;
+}
+
+.contenedor-nav nav ul li {
+  display: inline;
+  margin-left: 20px; /
+  
 }
 
 .contenedor-1 {
@@ -461,15 +465,7 @@ background-color: #001524;
 
 
 
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
+
 #check{
   display: none;
 }
@@ -477,6 +473,9 @@ background-color: #001524;
 
 .active{
   color:#52B69A;
+}
+.checkbtn{
+  display: none;
 }
 
 .button-CentradoV2{

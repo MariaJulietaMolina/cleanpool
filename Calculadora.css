@@ -530,22 +530,15 @@ body {
 }
 
 
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
 #check{
   display: none;
 }
 
-
 .active{
   color:#52B69A;
+}
+.checkbtn{
+  display: none;
 }
 
 .consideracionTitulo{

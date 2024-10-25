@@ -271,15 +271,6 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
   
 
 
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
 #check{
   display: none;
 }
@@ -287,6 +278,9 @@ background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
 
 .active{
   color:#52B69A;
+}
+.checkbtn{
+  display: none;
 }
 
 .pregunta{
