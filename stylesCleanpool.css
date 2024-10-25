@@ -53,10 +53,6 @@ nav ul li a:hover {
   color: #5ab3df; /* Cambia el color al pasar el ratón */
 }
 
-nav ul li {
-  margin-right: 23px; /* Espacio entre los ítems */
-}
-
  
 .contenedor-nav {
   display: flex;
@@ -513,6 +509,20 @@ display: inline-flex;
 /* Media Query para pantallas pequeñas */
 
 @media (max-width: 730px) {
+
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
+  }
+  
+
   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
   .checkbtn {
     display: block;
@@ -567,7 +577,7 @@ display: inline-flex;
 }
 
 .div1-contenedor-a h1{
-  font-size: 400%;
+  font-size: 300%;
 }
 
 .contenedor-d-span{
@@ -647,6 +657,11 @@ display: inline-flex;
 }
 .logosFC{
   transform: scale(0.8);
+}
+
+.imagenGigante, .div1-contenedor-a{
+  height: 16em;
+  margin-block: 2em;
 }
   
   }
