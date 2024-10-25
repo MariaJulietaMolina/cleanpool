@@ -83,18 +83,7 @@ nav ul li a:hover {
   background-size: 99%;
 }
 
-.contenedor-a {
-  background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
-  background-image: url("./asset/IMAGENES CLEANPOOL/fondo-3.jpg"); 
-  background-size: cover; /* Asegura que la imagen cubra todo el div */
-  background-position: center; /* Centra la imagen dentro del div */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  min-height: 400px; /* Altura mínima para asegurar que la imagen se muestre adecuadamente */
-  display: flex;
-  align-items: center; /* Centra el contenido verticalmente */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  
-}
+
 
 .div1-contenedor-a {
   color: white; /* Cambia el color del texto para mejorar contraste */
@@ -117,7 +106,6 @@ nav ul li a:hover {
   color: #f2f3f4;
   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
   display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-  margin-top: 5%; 
   margin-left: 5%;
   margin-right: 10%;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
@@ -141,11 +129,7 @@ nav ul li a:hover {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
  }
 
-.div1-contenedor-a {
-  width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
-  display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-  margin: 30px 0; /* Añade un espacio vertical entre las secciones */
-}
+
 
 .contenedor-b > div {
   text-align: center;
@@ -425,7 +409,7 @@ background-color: rgb(251, 253, 255);}
 
 .div1-contenedor-1 img{
   width: 600px;
-  margin-top: 10%;
+ 
   margin-left: 20px;
   
 }
@@ -480,6 +464,10 @@ background-color: #001524;
 
 .button-CentradoV2{
   display: none;
+}
+
+.contenedor-1{
+  margin-top: 1em;
 }
 
 /*INICIO DE MEDIA QUERYS*/
@@ -553,8 +541,7 @@ DESPUES*/
     color: #f2f3f4;
     width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
     display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-    margin-top: 5%; 
-    
+     
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
    }
 
@@ -564,6 +551,10 @@ DESPUES*/
     object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
     margin-left: 10%;
   }
+
+.div2-contenedor-1{
+  margin-block: -4em;
+}
 
   .div1-contenedor-1 div{
     margin-top: 0em;
@@ -704,35 +695,3 @@ DESPUES*/
   }
 
 
-/*lasquerys del chat.. modfificadas*/
-/* Para pantallas de hasta 320px */
-@media (max-width: 320px) {
-  /* Ajusta los estilos según el diseño deseado para pantallas muy pequeñas */
- 
-
-
-  
-}
-
-/* Para pantallas de hasta 480px */
-
-/* Para pantallas de hasta 720px */
-@media  (min-width: 481px) and (max-width: 720px) {
- 
-}
-
-
-/* Para pantallas de hasta 960px */
-@media (max-width: 960px) {
- 
-}
-
-/* Para pantallas de hasta 1024px */
-@media (max-width: 1024px) {
- 
-}
-
-/* Para pantallas de 1326px en adelante */
-@media (min-width: 1326px) {
-  /* No necesitas hacer cambios específicos, ya que esta resolución será tu diseño por defecto */
-}
