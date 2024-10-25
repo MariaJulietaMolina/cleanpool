@@ -56,6 +56,7 @@ nav img {
 }
 
 
+
 /* Estilo de los enlaces de la lista */
 nav ul li a {
   text-decoration: none; /* Elimina el subrayado de los enlaces */
@@ -485,14 +486,23 @@ background-color: #001524;
 /*INICIO DE MEDIA QUERYS*/
 
 /* Media Query para pantallas pequeñas */
+nav ul li {
+  margin-right: 23px; /* Espacio entre los ítems */
+}
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Ajusta según sea necesario */
+}
 @media (max-width: 730px) {
    /* Mostrar el botón de hamburguesa en pantallas pequeñas */
    .checkbtn {
     display: block;
     position: absolute;
     right: 20px;
-   
     color:#001524;
   }
 
