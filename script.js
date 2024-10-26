@@ -35,6 +35,18 @@ function calcular() {
     }
 }
 //aca empiezan las calculadoras
+//ACA ESTAN LOS PRECIOS Y DONDE SE TIENE QUE MODIFICAR
+// Precios de los químicos
+const preciosQuimicos = {
+    cloro: 1100, // Precio por litro de cloro
+    bs77: 6600, // Precio por litro de BS77
+    bp65: 3300, // Precio por litro de BP65
+    sssAlum: 1300 // Precio por litro de SSS Alum
+};
+//ACA ARRIBA ESTAN LOS PRECIOS DONDES E TIENE QUE MODIFICAR
+//ACA ARRIBA SOLAMENTE HAY QUE MODIFICAR
+
+
 // Calculadora Arranque
 function calcularArranque() {
     // Entrada de valores
@@ -44,12 +56,7 @@ function calcularArranque() {
     
 
 
-    // Precios por tipo de agua
-    const precios = {
-        aguaRed: 100, // Precio para agua red
-        aguaPozo1: 120, // Precio para agua pozo 1
-        aguaPozo2: 140 // Precio para agua pozo 2
-    };
+   
 
     if (volumen > 0) {
         // Calcula los productos por tipo de agua y volumen
@@ -99,8 +106,11 @@ function calcularArranque() {
         let data = tabla[tipoAgua].find(item => item.volumen === volumen);
 
         if (data) {
-            const precio = precios[tipoAgua] || 0; // Obtener el precio del tipo de agua
-            const total = precio * volumen; // Calcular el total
+            // Cálculo del total basado en los precios de los químicos
+            const total = (data.cloro * preciosQuimicos.cloro) + 
+                          (data.sssAlum * preciosQuimicos.sssAlum) + 
+                          (data.bp65 * preciosQuimicos.bp65) + 
+                          (data.bs77 * preciosQuimicos.bs77);
 
             productos = `
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
@@ -116,9 +126,9 @@ function calcularArranque() {
         productos = 'Por favor, ingresa un volumen válido.';
     }
 
-    // Mostrar resultado en el lugar correcto
     document.getElementById('resultadoArranque').innerHTML = productos;
 }
+
 
 //calculadora mantenimiento
 function calcularMantenimiento() {
@@ -127,12 +137,7 @@ function calcularMantenimiento() {
     const volumen = parseInt(document.getElementById('volumenMantenimiento').value);
     let productos = '';
 
-    // Precios por tipo de agua
-    const precios = {
-        aguaRed: 100, // Precio para agua red
-        aguaPozo1: 120, // Precio para agua pozo 1
-        aguaPozo2: 140 // Precio para agua pozo 2
-    };
+   
 
     if (volumen > 0) {
         // calcula los productos por tipo de agua y volumen
@@ -180,10 +185,11 @@ function calcularMantenimiento() {
 
         // Seleccionar resultado según el tipo de agua
         let data = tabla[tipoAgua].find(item => item.volumen === volumen);
-
         if (data) {
-            const precio = precios[tipoAgua] || 0; // Obtener el precio del tipo de agua
-            const total = precio * volumen; // Calcular el total
+            const total = (data.cloro * preciosQuimicos.cloro) + 
+                          (data.sssAlum * preciosQuimicos.sssAlum) + 
+                          (data.bp65 * preciosQuimicos.bp65) + 
+                          (data.bs77 * preciosQuimicos.bs77);
 
             productos = `
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
@@ -199,9 +205,10 @@ function calcularMantenimiento() {
         productos = 'Por favor, ingresa un volumen válido.';
     }
 
-    // Mostrar resultado
     document.getElementById('resultadoMantenimiento').innerHTML = productos;
 }
+
+
 
 //calculadora recuperacion
 function calcularRecuperacion() {
@@ -210,12 +217,7 @@ function calcularRecuperacion() {
     const volumen = parseInt(document.getElementById('volumenRecuperacion').value);
     let productos = '';
 
-    // Precios por tipo de agua para recuperar ( mantiene el mismo codigo, cambian los comentarios)
-    const precios = {
-        aguaRed: 100, // Precio para agua poco turbia
-        aguaPozo1: 120, // Precio para agua turbia
-        aguaPozo2: 140 // Precio para agua muy turbia
-    };
+  
 
     if (volumen > 0) {
         // calcula los productos por tipo de agua y volumen
@@ -268,8 +270,9 @@ function calcularRecuperacion() {
         let data = tabla[tipoAgua].find(item => item.volumen === volumen);
 
         if (data) {
-            const precio = precios[tipoAgua] || 0; // Obtener el precio del tipo de agua
-            const total = precio * volumen; // Calcular el total
+            const total = (data.cloro * preciosQuimicos.cloro) + 
+                          (data.sssAlum * preciosQuimicos.sssAlum) + 
+                          (data.bp65 * preciosQuimicos.bp65);
 
             productos = `
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
@@ -284,10 +287,8 @@ function calcularRecuperacion() {
         productos = 'Por favor, ingresa un volumen válido.';
     }
 
-    // Mostrar resultado
     document.getElementById('resultadoRecuperacion').innerHTML = productos;
 }
-
 
 
 // Manejar consideraciones
