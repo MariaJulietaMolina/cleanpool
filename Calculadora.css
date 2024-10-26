@@ -734,7 +734,7 @@ LA DERECHA */
  display: flex;
  flex-wrap: wrap;
  justify-content:center;
- margin-left: -1em;
+
 }
 
 .titulo-contenedor-7{
@@ -750,7 +750,7 @@ LA DERECHA */
 }
 
 .btn-contenedor-7{
- transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+ 
  margin-left: 13%;
 }
 
@@ -866,7 +866,7 @@ LA DERECHA */
 
 
 .div1-contenedor-1a .div2-contenedor-1 .cal11 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top: -1em;
 }
 .div1-contenedor-1a .div2-contenedor-1 .subCal11{
