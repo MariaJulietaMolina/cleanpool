@@ -1,3 +1,5 @@
+"use strict";
+    
     // Manejar preguntas frecuentes
     const preguntas = document.querySelectorAll('.pregunta-titulo');
 
