@@ -884,9 +884,11 @@ LA DERECHA */
 }
 .div1-contenedor-1a .div2-contenedor-1 .subCal11{
   font-size: 1em;
- color:#000000;
- text-shadow: white;
+ color:#f3f2f2;
+ text-shadow: rgb(0, 0, 0);
 }
+
+
 
 
 .contenedor-5{
@@ -901,6 +903,7 @@ LA DERECHA */
   display: block;
   margin-top: -8px;
   opacity: 150%;
+  text-shadow: none;
 }
 
 .consideracionesTOTAL{
