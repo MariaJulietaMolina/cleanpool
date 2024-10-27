@@ -755,8 +755,9 @@ LA DERECHA */
 }
 
 .btn-contenedor-7{
+  transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+  margin-left: 13%;
  
- margin-left: 13%;
 }
 
 .img-niños img{
