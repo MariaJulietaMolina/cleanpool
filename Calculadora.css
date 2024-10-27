@@ -61,7 +61,7 @@ body {
     background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
     background-image: url("./asset/bidones2.jpg"); /* Ruta a la imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el div */
-    background-position: center; /* Centra la imagen dentro del div */
+    background-position: top; /* Fija la imagen en la parte superior */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: 100%;
     width: 100%;
@@ -785,13 +785,14 @@ LA DERECHA */
 
 
 /* Estilo para el contenedor principal de las calculadoras */
-#contenedoresDeCalculadoras2{
+#contenedoresDeCalculadoras{
   display: flex;
   flex-direction: column; /* Alinea las calculadoras una encima de otra */
   justify-content: center;
   align-items: center; /* Centra los elementos en el eje horizontal */
   padding: 20px;
   gap: 30px; /* Espacio entre cada calculadora */
+  width: 90%;
 }
 
 .contenedor-calculadoras {
@@ -799,7 +800,7 @@ LA DERECHA */
   flex-direction: column; /* Asegura que las calculadoras estén una debajo de otra */
   align-items: center; /* Centra horizontalmente las calculadoras */
   gap: 30px; /* Espacio entre cada calculadora */
-  width: 100%; /* Hacer que ocupen todo el ancho disponible */
+  width: 90%; /* Hacer que ocupen todo el ancho disponible */
   padding: 20px; /* Espaciado interno */
 }
 
