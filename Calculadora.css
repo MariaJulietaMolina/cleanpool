@@ -561,6 +561,11 @@ body {
   display: none;
 }
 
+#contenedoresDeCalculadoras{
+  text-shadow: none;
+  
+}
+
 /*INICIO DE MEDIA QUERYS*/
 
 /* Media Query para pantallas pequeñas */
