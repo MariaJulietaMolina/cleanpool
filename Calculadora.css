@@ -584,6 +584,9 @@ LA DERECHA */
    color:#001524;
  }
 
+ .titulo-cards{
+  text-shadow: none;
+ }
 
  /* Esconder el menú inicialmente (movido hacia arriba) */
  nav ul {
@@ -881,7 +884,8 @@ LA DERECHA */
 }
 .div1-contenedor-1a .div2-contenedor-1 .subCal11{
   font-size: 1em;
- color:#5ab3df;
+ color:#000000;
+ text-shadow: white;
 }
 
 
@@ -906,5 +910,6 @@ LA DERECHA */
   width: 55%; 
   margin: 0 auto;
 }
+
 
 }
