@@ -584,6 +584,7 @@ LA DERECHA */
    color:#001524;
  }
 
+
  /* Esconder el menú inicialmente (movido hacia arriba) */
  nav ul {
    position: absolute;
@@ -777,7 +778,11 @@ LA DERECHA */
   display: none;
 }
 
+
+
+
 /*ACA EMPIEZAN CALCULADORAS 2"
+
 
 /* Estilo para el contenedor principal de las calculadoras */
 #contenedoresDeCalculadoras2{
@@ -865,9 +870,7 @@ LA DERECHA */
 
 
 
-#contenedoresDeCalculadoras {
-  display: none !important;
-}
+
 
 
 
